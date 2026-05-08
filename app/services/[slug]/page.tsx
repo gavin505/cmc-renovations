@@ -82,7 +82,7 @@ export default function ServicePage({ params }: Props) {
               ))}
             </ul>
             <p className="mt-8 text-gray-600 text-lg">
-              For all of your interior contracting and remodeling projects, call us for an estimate.
+              We also offer general remodeling and interior finishing services — flooring, painting, cabinetry, and more. Call us for an estimate.
             </p>
           </div>
 

@@ -23,7 +23,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="relative bg-[#1a1a1a] pt-36 pb-20 px-6 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/IMG_1553.jpg" alt="" className="w-full h-full object-cover opacity-15" />
+          <img src="/KitchenRemodel9.jpg" alt="" className="w-full h-full object-cover opacity-15" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] via-[#1a1a1a]/90 to-[#1a1a1a]/70" />
         </div>
         <div className="absolute left-0 top-0 bottom-0 w-1.5" style={{ background: "var(--teal)" }} />

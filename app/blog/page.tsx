@@ -20,18 +20,18 @@ export default function BlogPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-[#1a1a1a] pt-32 pb-20 px-6 overflow-hidden">
+      <section className="relative bg-[#1a1a1a] pt-36 pb-20 px-6 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/KitchenRemodel2.jpg" alt="" className="w-full h-full object-cover opacity-15" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] via-[#1a1a1a]/90 to-[#1a1a1a]/70" />
+          <img src="/KitchenRemodel2.jpg" alt="" className="w-full h-full object-cover opacity-25" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a]/90 via-[#1a1a1a]/70 to-[#1a1a1a]/50" />
         </div>
         <div className="absolute left-0 top-0 bottom-0 w-1.5" style={{ background: "var(--teal)" }} />
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto relative z-10">
           <p className="text-xs font-semibold uppercase tracking-widest text-teal-400 mb-4">
             Our Blog
           </p>
           <h1
-            className="text-5xl md:text-6xl font-bold text-white leading-tight mb-6"
+            className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6 drop-shadow-lg"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
             Renovation Insights<br />
@@ -39,7 +39,7 @@ export default function BlogPage() {
               & Expert Tips
             </span>
           </h1>
-          <p className="text-lg text-white/70 max-w-2xl">
+          <p className="text-xl text-white/80 max-w-2xl">
             Practical advice, project guides, and industry knowledge from Brady and
             Taylor at CMC Renovations.
           </p>

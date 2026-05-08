@@ -120,6 +120,7 @@ export default function ContactPage() {
                     {SERVICES.map((s) => (
                       <option key={s.slug} value={s.slug}>{s.title}</option>
                     ))}
+                    <option value="general-remodeling">General Remodeling / Interior Finishing</option>
                     <option value="other">Other / Not sure yet</option>
                   </select>
                 </div>

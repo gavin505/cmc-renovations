@@ -4,7 +4,7 @@ import { GALLERY_IMAGES } from "@/lib/data";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
-const CATEGORIES = ["all", "bathroom", "basement", "kitchen", "exterior", "interior"] as const;
+const CATEGORIES = ["all", "kitchen", "bathroom", "basement", "general"] as const;
 
 export default function GalleryPage() {
   const [active, setActive] = useState<string>("all");
