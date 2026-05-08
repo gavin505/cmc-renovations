@@ -24,6 +24,8 @@ function driveImg(id: string) {
 }
 
 export const GALLERY_IMAGES = [
+  { src: "/images/bathroomremodel4.jpg", alt: "Bathroom Remodel", category: "bathroom" },
+  { src: "/images/bathroomremodel9.jpg", alt: "Bathroom Remodel", category: "bathroom" },
   { src: driveImg("1iu_M4Rp5ejKrBZJOq8Vwdw8faO3XDbg1"), alt: "Bathroom Remodel", category: "bathroom" },
   { src: driveImg("110S2wXCvHiZ-IytePjX4NCYecGEbYL_D"), alt: "Bathroom Remodel", category: "bathroom" },
   { src: driveImg("14MKplisEsLqn_xTkufD5SDr231Gy47RH"), alt: "Bathroom Remodel", category: "bathroom" },
@@ -52,6 +54,8 @@ export const GALLERY_IMAGES = [
   { src: driveImg("1T8OUyfrcmjPWDimPLaNqB7ygz5L-ZSJa"), alt: "Staircase Bannister", category: "interior" },
   { src: driveImg("1HOZWBg47nAzwA4iU3Dt3oOS2hboeEty-"), alt: "Staircase Bannister", category: "interior" },
   { src: driveImg("1a_IymyZb9TLFE7NOVNbAMim5imDiOBHf"), alt: "Staircase Bannister", category: "interior" },
+  { src: "/images/kitchenremodel.jpg", alt: "Kitchen Remodel", category: "kitchen" },
+  { src: "/images/kitchenremodel8.jpg", alt: "Kitchen Remodel", category: "kitchen" },
   { src: driveImg("1UEZEwXMdeveh-wKqPOmY4S_eEZnZ3hsz"), alt: "Kitchen Remodel", category: "kitchen" },
   { src: driveImg("1zhdx04dzclEqoiybtHVQHfp7XsTCJp64"), alt: "Kitchen Remodel", category: "kitchen" },
 ];
@@ -73,8 +77,10 @@ export const SERVICES = [
       "Lighting design",
       "Complete layout reconfiguration",
     ],
-    heroImage: driveImg("1UEZEwXMdeveh-wKqPOmY4S_eEZnZ3hsz"),
+    heroImage: "/images/kitchenremodel.jpg",
     galleryImages: [
+      "/images/kitchenremodel.jpg",
+      "/images/kitchenremodel8.jpg",
       driveImg("1UEZEwXMdeveh-wKqPOmY4S_eEZnZ3hsz"),
       driveImg("1zhdx04dzclEqoiybtHVQHfp7XsTCJp64"),
     ],
@@ -95,8 +101,10 @@ export const SERVICES = [
       "Lighting & ventilation",
       "Accessibility modifications",
     ],
-    heroImage: driveImg("1iu_M4Rp5ejKrBZJOq8Vwdw8faO3XDbg1"),
+    heroImage: "/images/bathroomremodel4.jpg",
     galleryImages: [
+      "/images/bathroomremodel4.jpg",
+      "/images/bathroomremodel9.jpg",
       driveImg("1iu_M4Rp5ejKrBZJOq8Vwdw8faO3XDbg1"),
       driveImg("1bRkczNZV7Q_RIHH7FM-mFyPdCDQUoYn8"),
       driveImg("1svzJsnbdfqKXSCAbC0Nwa2a9WlFrq5T2"),
@@ -217,8 +225,8 @@ export const SERVICES = [
       "Cabinet hardware & soft-close upgrades",
       "Painted & stained finishes",
     ],
-    heroImage: driveImg("1UEZEwXMdeveh-wKqPOmY4S_eEZnZ3hsz"),
-    galleryImages: [driveImg("1UEZEwXMdeveh-wKqPOmY4S_eEZnZ3hsz")],
+    heroImage: "/images/kitchenremodel8.jpg",
+    galleryImages: ["/images/kitchenremodel8.jpg"],
   },
   {
     slug: "home-office-remodeling",
