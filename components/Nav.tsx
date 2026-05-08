@@ -62,10 +62,11 @@ export default function Nav() {
             </button>
 
             <div
-              className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 w-72 bg-white border border-[#ede9df] rounded-2xl shadow-xl overflow-hidden transition-all duration-200 origin-top ${
+              className={`absolute top-full left-1/2 -translate-x-1/2 pt-2 w-72 transition-all duration-200 origin-top ${
                 servicesOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
               }`}
             >
+              <div className="bg-white border border-[#ede9df] rounded-2xl shadow-xl overflow-hidden">
               <div className="p-3 grid grid-cols-2 gap-1">
                 {SERVICES.map((s) => (
                   <Link
@@ -74,10 +75,10 @@ export default function Nav() {
                     className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm text-charcoal hover:bg-teal-50 hover:text-teal-700 transition-colors group"
                     onClick={() => setServicesOpen(false)}
                   >
-                    <span className="text-base">{s.icon}</span>
                     <span className="font-medium leading-tight">{s.shortTitle}</span>
                   </Link>
                 ))}
+              </div>
               </div>
             </div>
           </div>
@@ -93,6 +94,12 @@ export default function Nav() {
             className="text-sm font-medium text-charcoal hover:text-teal-600 transition-colors"
           >
             About
+          </Link>
+          <Link
+            href="/blog"
+            className="text-sm font-medium text-charcoal hover:text-teal-600 transition-colors"
+          >
+            Blog
           </Link>
           <Link
             href="/contact"
@@ -134,6 +141,7 @@ export default function Nav() {
             { href: "/", label: "Home" },
             { href: "/gallery", label: "Gallery" },
             { href: "/about", label: "About" },
+            { href: "/blog", label: "Blog" },
             { href: "/contact", label: "Contact" },
           ].map((item) => (
             <Link
@@ -156,7 +164,7 @@ export default function Nav() {
                   className="flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm text-charcoal hover:bg-[#ede9df] transition-colors"
                   onClick={() => setMenuOpen(false)}
                 >
-                  <span>{s.icon}</span> {s.shortTitle}
+                  {s.shortTitle}
                 </Link>
               ))}
             </div>

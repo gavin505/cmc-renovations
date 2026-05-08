@@ -136,7 +136,6 @@ export default function ServicePage({ params }: Props) {
                 href={`/services/${s.slug}`}
                 className="group p-5 rounded-2xl bg-white border border-[#ede9df] hover:border-teal-200 hover:shadow-md transition-all"
               >
-                <span className="text-2xl mb-3 block">{s.icon}</span>
                 <h3 className="font-bold text-charcoal text-sm group-hover:text-teal-700 transition-colors">
                   {s.title}
                 </h3>

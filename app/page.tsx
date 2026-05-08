@@ -167,7 +167,6 @@ export default function HomePage() {
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/60 via-transparent to-transparent" />
-                  <span className="absolute top-4 left-4 text-2xl">{service.icon}</span>
                 </div>
 
                 {/* Content */}
@@ -198,7 +197,7 @@ export default function HomePage() {
                 href={`/services/${s.slug}`}
                 className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-white border border-[#ede9df] text-sm font-medium text-charcoal hover:border-teal-300 hover:text-teal-700 hover:bg-teal-50 transition-all"
               >
-                <span>{s.icon}</span> {s.title}
+                {s.title}
               </Link>
             ))}
           </div>

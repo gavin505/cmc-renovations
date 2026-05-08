@@ -66,6 +66,15 @@ export default function Footer() {
               <Youtube size={16} />
             </a>
           </div>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link href="/gallery" className="text-sm text-gray-300 hover:text-teal-400 transition-colors">Gallery</Link>
+            <span className="text-gray-600">·</span>
+            <Link href="/about" className="text-sm text-gray-300 hover:text-teal-400 transition-colors">About</Link>
+            <span className="text-gray-600">·</span>
+            <Link href="/blog" className="text-sm text-gray-300 hover:text-teal-400 transition-colors">Blog</Link>
+            <span className="text-gray-600">·</span>
+            <Link href="/contact" className="text-sm text-gray-300 hover:text-teal-400 transition-colors">Contact</Link>
+          </div>
         </div>
 
         {/* Services */}
