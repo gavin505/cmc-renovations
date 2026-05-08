@@ -24,6 +24,8 @@ function driveImg(id: string) {
 }
 
 export const GALLERY_IMAGES = [
+  { src: "/images/bathroomremodel4.jpg", alt: "Bathroom Remodel", category: "bathroom" },
+  { src: "/images/bathroomremodel9.jpg", alt: "Bathroom Remodel", category: "bathroom" },
   { src: driveImg("1iu_M4Rp5ejKrBZJOq8Vwdw8faO3XDbg1"), alt: "Bathroom Remodel", category: "bathroom" },
   { src: driveImg("110S2wXCvHiZ-IytePjX4NCYecGEbYL_D"), alt: "Bathroom Remodel", category: "bathroom" },
   { src: driveImg("14MKplisEsLqn_xTkufD5SDr231Gy47RH"), alt: "Bathroom Remodel", category: "bathroom" },
@@ -52,6 +54,8 @@ export const GALLERY_IMAGES = [
   { src: driveImg("1T8OUyfrcmjPWDimPLaNqB7ygz5L-ZSJa"), alt: "Staircase Bannister", category: "interior" },
   { src: driveImg("1HOZWBg47nAzwA4iU3Dt3oOS2hboeEty-"), alt: "Staircase Bannister", category: "interior" },
   { src: driveImg("1a_IymyZb9TLFE7NOVNbAMim5imDiOBHf"), alt: "Staircase Bannister", category: "interior" },
+  { src: "/images/kitchenremodel.jpg", alt: "Kitchen Remodel", category: "kitchen" },
+  { src: "/images/kitchenremodel8.jpg", alt: "Kitchen Remodel", category: "kitchen" },
   { src: driveImg("1UEZEwXMdeveh-wKqPOmY4S_eEZnZ3hsz"), alt: "Kitchen Remodel", category: "kitchen" },
   { src: driveImg("1zhdx04dzclEqoiybtHVQHfp7XsTCJp64"), alt: "Kitchen Remodel", category: "kitchen" },
 ];
@@ -73,8 +77,10 @@ export const SERVICES = [
       "Lighting design",
       "Complete layout reconfiguration",
     ],
-    heroImage: driveImg("1UEZEwXMdeveh-wKqPOmY4S_eEZnZ3hsz"),
+    heroImage: "/images/kitchenremodel.jpg",
     galleryImages: [
+      "/images/kitchenremodel.jpg",
+      "/images/kitchenremodel8.jpg",
       driveImg("1UEZEwXMdeveh-wKqPOmY4S_eEZnZ3hsz"),
       driveImg("1zhdx04dzclEqoiybtHVQHfp7XsTCJp64"),
     ],
@@ -95,8 +101,10 @@ export const SERVICES = [
       "Lighting & ventilation",
       "Accessibility modifications",
     ],
-    heroImage: driveImg("1iu_M4Rp5ejKrBZJOq8Vwdw8faO3XDbg1"),
+    heroImage: "/images/bathroomremodel4.jpg",
     galleryImages: [
+      "/images/bathroomremodel4.jpg",
+      "/images/bathroomremodel9.jpg",
       driveImg("1iu_M4Rp5ejKrBZJOq8Vwdw8faO3XDbg1"),
       driveImg("1bRkczNZV7Q_RIHH7FM-mFyPdCDQUoYn8"),
       driveImg("1svzJsnbdfqKXSCAbC0Nwa2a9WlFrq5T2"),
@@ -217,8 +225,8 @@ export const SERVICES = [
       "Cabinet hardware & soft-close upgrades",
       "Painted & stained finishes",
     ],
-    heroImage: driveImg("1UEZEwXMdeveh-wKqPOmY4S_eEZnZ3hsz"),
-    galleryImages: [driveImg("1UEZEwXMdeveh-wKqPOmY4S_eEZnZ3hsz")],
+    heroImage: "/images/kitchenremodel8.jpg",
+    galleryImages: ["/images/kitchenremodel8.jpg"],
   },
   {
     slug: "home-office-remodeling",
@@ -257,6 +265,79 @@ export const SERVICES = [
     ],
     heroImage: driveImg("1aqeA0S2WZK-C4pb5RkgEz9RnsE0PVLkd"),
     galleryImages: [driveImg("1aqeA0S2WZK-C4pb5RkgEz9RnsE0PVLkd")],
+  },
+];
+
+export const BLOG_POSTS = [
+  {
+    slug: "spring-renovation-checklist-2026",
+    title: "Your Spring 2026 Home Renovation Checklist",
+    date: "2026-05-05",
+    excerpt:
+      "Spring is the perfect time to tackle those home improvement projects you've been putting off. Here's what should be at the top of your list this season.",
+    content:
+      "As the weather warms up in Butler County, spring is an ideal time to address home improvements. Start by inspecting your home's exterior for winter damage — check siding, gutters, and the roof for any wear. Inside, assess rooms that need refreshing: a bathroom update, fresh paint, or new flooring can dramatically change how your home feels. Spring is also a great time for basement waterproofing before summer storms arrive. At CMC Renovations, we see a surge in kitchen and bathroom remodels this time of year, and scheduling early means shorter wait times. Whether you're planning a full remodel or a simple refresh, a walkthrough with Brady can help you prioritize what matters most for your home and budget.",
+    category: "Seasonal Tips",
+  },
+  {
+    slug: "choosing-the-right-flooring",
+    title: "Hardwood vs. LVP: Choosing the Right Flooring for Your Home",
+    date: "2026-04-21",
+    excerpt:
+      "Hardwood and luxury vinyl plank are the two most popular flooring options we install. Here's how to decide which is right for your space.",
+    content:
+      "When homeowners ask us about flooring, the conversation almost always comes down to hardwood versus luxury vinyl plank (LVP). Both are excellent choices, but they serve different needs. Hardwood offers timeless beauty and can be refinished multiple times over its lifespan — it's ideal for living rooms, dining areas, and bedrooms where moisture isn't a major concern. LVP, on the other hand, is waterproof, more affordable, and incredibly durable against scratches and dents, making it perfect for kitchens, bathrooms, basements, and homes with pets or young children. At CMC Renovations, we install both with the same attention to detail: proper subfloor preparation, precise leveling, and clean transitions between rooms. The right choice depends on your lifestyle, budget, and where the flooring is going. We're happy to walk you through samples and help you decide during a free estimate.",
+    category: "Materials & Design",
+  },
+  {
+    slug: "bathroom-remodel-roi",
+    title: "Is a Bathroom Remodel Worth It? ROI and What to Expect",
+    date: "2026-04-07",
+    excerpt:
+      "A bathroom remodel is one of the best investments you can make in your home. Here's what the numbers say and what to expect from the process.",
+    content:
+      "Bathroom remodels consistently rank among the top home improvement projects for return on investment. According to industry data, a mid-range bathroom renovation recoups roughly 60-70% of its cost at resale — and that doesn't account for the daily comfort and satisfaction of using a space you actually enjoy. Common upgrades we handle at CMC Renovations include replacing outdated tile with modern large-format porcelain, swapping old tub-shower combos for walk-in showers with glass enclosures, upgrading vanities with soft-close drawers and quartz countertops, and improving lighting and ventilation. The process typically takes two to three weeks depending on scope. Brady and Taylor manage everything from demolition to final trim, and because we're owner-operated, you'll always know who's on your job site. If you're considering a bathroom remodel in Hamilton or the surrounding area, a free walkthrough is the best place to start.",
+    category: "Home Value",
+  },
+  {
+    slug: "basement-finishing-guide",
+    title: "Finishing Your Basement: A Complete Guide for Ohio Homeowners",
+    date: "2026-03-24",
+    excerpt:
+      "A finished basement adds livable square footage to your home without the cost of an addition. Here's everything you need to know before starting.",
+    content:
+      "Finishing a basement is one of the most cost-effective ways to add usable space to your home. In Ohio, where basements are standard, this often means converting a cold concrete space into a family room, home office, guest suite, or entertainment area. The process starts with addressing any moisture issues — proper waterproofing and drainage are non-negotiable before any framing goes up. From there, we handle framing, insulation, electrical, plumbing rough-in, drywall, flooring, and trim. Egress windows are required by code if you're adding a bedroom, and we manage the permitting process for you. One thing homeowners often underestimate is how much natural light and ceiling height matter in a basement. We design layouts that maximize both, using recessed lighting and strategic room placement to make the space feel open rather than buried. If you've been thinking about finishing your basement, early spring is a great time to start — before the busy summer season.",
+    category: "Project Guides",
+  },
+  {
+    slug: "kitchen-remodel-trends-2026",
+    title: "2026 Kitchen Remodel Trends We're Seeing in Butler County",
+    date: "2026-03-10",
+    excerpt:
+      "Kitchen design is shifting toward cleaner lines, warmer tones, and smarter storage. Here's what homeowners in our area are asking for this year.",
+    content:
+      "Kitchen trends in 2026 are moving away from the all-white farmhouse look that dominated the last several years. We're seeing homeowners in Hamilton and Butler County gravitate toward warmer wood tones for cabinetry, often paired with matte black or brushed brass hardware. Quartz remains the countertop of choice, but warmer shades with subtle veining are replacing the stark white marble-look options. Open shelving is losing ground to closed cabinetry with interior organization systems — pull-out drawers, spice racks, and built-in trash and recycling stations. Larger islands with waterfall edges continue to be popular, especially in open-concept layouts. On the appliance side, integrated panel-ready refrigerators and induction cooktops are gaining traction. At CMC Renovations, we work with you to balance current trends with timeless choices so your kitchen looks great for years, not just months. If you're planning a kitchen remodel, Brady can walk your space and discuss options during a free estimate.",
+    category: "Materials & Design",
+  },
+  {
+    slug: "hiring-a-contractor-tips",
+    title: "5 Things to Look for When Hiring a Renovation Contractor",
+    date: "2026-02-24",
+    excerpt:
+      "Not all contractors are created equal. Here's what to look for — and what to watch out for — when choosing someone to work on your home.",
+    content:
+      "Hiring the right contractor can make or break your renovation experience. After years of working in the industry, here are the five things we believe matter most. First, verify licensing and insurance — in Ohio, general contractors should carry liability insurance and workers' compensation. Ask for proof, not just a verbal confirmation. Second, look for an owner-operated business. When the owner is on your job site daily, accountability goes up and miscommunication goes down. Third, get a detailed written estimate that breaks down labor, materials, and timeline. Vague bids are a red flag. Fourth, check recent reviews and ask for references from projects similar to yours. Fifth, pay attention to communication during the estimate process — if a contractor is hard to reach before they have your money, it won't improve after. At CMC Renovations, Brady handles every estimate personally and is on-site for every project. We believe transparency and accountability aren't extras — they're the baseline.",
+    category: "Homeowner Tips",
+  },
+  {
+    slug: "winter-home-maintenance",
+    title: "Protect Your Investment: Winter Home Maintenance Tips",
+    date: "2026-02-10",
+    excerpt:
+      "Ohio winters are tough on homes. These maintenance steps can prevent costly damage and set you up for a smooth renovation season ahead.",
+    content:
+      "Ohio winters can be harsh on your home, but a little preventive maintenance goes a long way. Start by checking your home's insulation, especially in the attic and basement — poor insulation leads to ice dams, frozen pipes, and higher energy bills. Make sure your furnace filter is clean and your heating system has been serviced. Check weatherstripping around doors and windows; replacing worn seals is an inexpensive fix that makes a noticeable difference in comfort and efficiency. Inspect your roof and gutters for damage from fall storms — clogged or damaged gutters can cause ice buildup that leads to leaks. Inside, winter is an excellent time to plan spring projects. Scheduling your renovation estimate now means you'll be first in line when the weather breaks. At CMC Renovations, we offer free estimates year-round. If you're thinking about a kitchen remodel, bathroom update, or basement finishing project, getting on the calendar early ensures a smoother timeline and less waiting once work begins.",
+    category: "Seasonal Tips",
   },
 ];
 
