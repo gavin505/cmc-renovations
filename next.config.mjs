@@ -6,10 +6,6 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'lirp.cdn-website.com',
       },
-      {
-        protocol: 'https',
-        hostname: 'drive.google.com',
-      },
     ],
   },
 };
