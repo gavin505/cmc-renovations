@@ -81,6 +81,9 @@ export default function ServicePage({ params }: Props) {
                 </li>
               ))}
             </ul>
+            <p className="mt-8 text-gray-600 text-lg">
+              For all of your interior contracting and remodeling projects, call us for an estimate.
+            </p>
           </div>
 
           {/* Gallery mini */}

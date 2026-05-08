@@ -54,7 +54,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-lg md:text-xl text-white/80 leading-relaxed mb-10 max-w-xl">
-              Owner-operated renovations planned and executed with precision — Brady and Taylor on your job site every single day.
+              Owner-operated renovations with 15+ years of combined experience — Brady and Taylor on your job site every single day. We handle every aspect of your remodel in-house.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -78,12 +78,12 @@ export default function HomePage() {
             {/* Social proof strip */}
             <div className="flex flex-wrap items-center gap-6 mt-12 pt-12 border-t border-white/15">
               <div className="text-center">
-                <div className="text-3xl font-bold text-white" style={{ fontFamily: "var(--font-playfair)" }}>10+</div>
-                <div className="text-xs text-white/60 uppercase tracking-widest">Services</div>
+                <div className="text-3xl font-bold text-white" style={{ fontFamily: "var(--font-playfair)" }}>15+</div>
+                <div className="text-xs text-white/60 uppercase tracking-widest">Years Experience</div>
               </div>
               <div className="w-px h-10 bg-white/20" />
               <div className="text-center">
-                <div className="text-3xl font-bold text-white" style={{ fontFamily: "var(--font-playfair)" }}>13</div>
+                <div className="text-3xl font-bold text-white" style={{ fontFamily: "var(--font-playfair)" }}>9</div>
                 <div className="text-xs text-white/60 uppercase tracking-widest">Cities Served</div>
               </div>
               <div className="w-px h-10 bg-white/20" />
@@ -120,7 +120,7 @@ export default function HomePage() {
             , not guesswork.
           </p>
           <div className="flex flex-wrap gap-6">
-            {["Owner on-site daily", "Free estimates", "Licensed & insured", "Butler County experts"].map((item) => (
+            {["Owner on-site daily", "Free estimates", "Licensed & insured", "15+ years experience"].map((item) => (
               <div key={item} className="flex items-center gap-2 text-white/70 text-sm font-medium">
                 <CheckCircle2 size={16} className="text-teal-400 shrink-0" />
                 {item}
@@ -201,6 +201,10 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
+
+          <p className="mt-10 text-center text-gray-600 text-lg">
+            For all of your interior contracting and remodeling projects, call us for an estimate.
+          </p>
         </div>
       </section>
 
@@ -246,7 +250,7 @@ export default function HomePage() {
               The Owner is On<br />Your Job Site
             </h2>
             <p className="text-gray-600 leading-relaxed mb-8 text-lg">
-              When you hire CMC Renovations, you're hiring Brady and Taylor directly. No middlemen, no unanswered calls, no wondering who's actually doing the work. Owner-operated means you get real accountability — from the first estimate through the final walkthrough.
+              When you hire CMC Renovations, you're hiring Brady and Taylor directly. No middlemen, no unanswered calls, no wondering who's actually doing the work. We aren't the other guys — we don't fall out of contact, show up late, or pad projects with downtime. Owner-operated means real accountability from the first estimate through the final walkthrough.
             </p>
 
             <ul className="space-y-4 mb-10">
@@ -254,8 +258,8 @@ export default function HomePage() {
                 "Free, detailed estimates with no hidden costs",
                 "Owner on-site from day one through final walkthrough",
                 "Clear communication — you'll always know what's next",
-                "Licensed & insured in Ohio with general contractor experience",
-                "Serving Hamilton and 12+ surrounding communities",
+                "15+ years of combined remodeling experience",
+                "We handle every aspect of your remodel in-house",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <CheckCircle2 size={18} className="text-teal-600 mt-0.5 shrink-0" />
@@ -442,7 +446,7 @@ export default function HomePage() {
                 Serving Greater<br />Butler County
               </h2>
               <p className="text-gray-600 leading-relaxed mb-10 text-lg">
-                CMC Renovations serves Hamilton and 12 surrounding communities — with local knowledge of permitting, building practices, and what homeowners in the area actually need.
+                CMC Renovations serves Hamilton and surrounding communities — with local knowledge of permitting, building practices, and what homeowners in the area actually need.
               </p>
               <Link
                 href="/contact"

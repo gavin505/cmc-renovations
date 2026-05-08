@@ -5,6 +5,7 @@ import { Phone, MapPin, Clock, CheckCircle2, Send } from "lucide-react";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const [form, setForm] = useState({
     name: "", email: "", phone: "", service: "", location: "", message: "",
   });
@@ -13,10 +14,25 @@ export default function ContactPage() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In production: wire to Netlify Forms, Formspree, or email service
-    setSubmitted(true);
+    setSubmitting(true);
+    try {
+      const formData = new URLSearchParams({
+        "form-name": "contact",
+        ...form,
+      });
+      await fetch("/__forms.html", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: formData.toString(),
+      });
+      setSubmitted(true);
+    } catch {
+      setSubmitted(true);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -61,7 +77,11 @@ export default function ContactPage() {
                 </p>
               </div>
             ) : (
-              <form onSubmit={submit} className="space-y-6">
+              <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onSubmit={submit} className="space-y-6">
+                <input type="hidden" name="form-name" value="contact" />
+                <p style={{ display: "none" }}>
+                  <label>Don&apos;t fill this out: <input name="bot-field" /></label>
+                </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   {[
                     { name: "name", label: "Your Name", type: "text", placeholder: "Jane Smith" },
@@ -120,11 +140,12 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  className="flex items-center gap-3 px-8 py-4 rounded-full text-white font-bold text-lg hover:shadow-xl hover:shadow-teal-200 hover:-translate-y-0.5 transition-all"
+                  disabled={submitting}
+                  className="flex items-center gap-3 px-8 py-4 rounded-full text-white font-bold text-lg hover:shadow-xl hover:shadow-teal-200 hover:-translate-y-0.5 transition-all disabled:opacity-60"
                   style={{ background: "var(--teal)" }}
                 >
                   <Send size={18} />
-                  Send My Estimate Request
+                  {submitting ? "Sending…" : "Send My Estimate Request"}
                 </button>
 
                 <p className="text-xs text-gray-400">
@@ -147,7 +168,7 @@ export default function ContactPage() {
                 <li className="flex items-start gap-3">
                   <Phone size={18} className="text-teal-400 mt-0.5 shrink-0" />
                   <div>
-                    <p className="text-xs text-gray-400 uppercase tracking-wider mb-1">Phone</p>
+                    <p className="text-xs text-gray-400 uppercase tracking-wider mb-1">Call or Text</p>
                     <a href={`tel:${COMPANY.phone}`} className="text-white font-semibold hover:text-teal-400 transition-colors">
                       {COMPANY.phone}
                     </a>
