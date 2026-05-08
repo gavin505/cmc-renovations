@@ -60,7 +60,7 @@ export default function LocationPage({ params }: Props) {
             <span className="italic" style={{ color: "var(--teal-light)" }}>{loc.name}</span>
           </h1>
           <p className="text-xl text-white/70 max-w-2xl mb-10">
-            CMC Renovations brings owner-operated renovations to {loc.name} homeowners — kitchen remodels, bathroom updates, basement finishing, and more. Brady and Taylor on every job.
+            CMC Renovations brings owner-operated renovations to {loc.name} homeowners — kitchen remodels, bathroom updates, basement finishing, and general remodeling and interior finishing services. Brady and Taylor on every job.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
@@ -131,6 +131,12 @@ export default function LocationPage({ params }: Props) {
                   <ArrowRight size={14} className="text-gray-300 group-hover:text-teal-500 group-hover:translate-x-1 transition-all" />
                 </Link>
               ))}
+              <div className="p-4 rounded-xl bg-teal-50 border border-teal-100">
+                <p className="text-sm text-teal-800 font-medium">
+                  General remodeling and interior finishing services also available in {loc.name} — flooring, painting, cabinetry, and more.{" "}
+                  <Link href="/contact" className="underline hover:text-teal-600">Contact us for details.</Link>
+                </p>
+              </div>
             </div>
           </div>
         </div>

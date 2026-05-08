@@ -11,7 +11,6 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  const featuredServices = SERVICES.slice(0, 6);
   const heroImage = GALLERY_IMAGES.find((g) => g.category === "bathroom")!;
   const featureImages = GALLERY_IMAGES.filter((g) => g.category !== "kitchen").slice(0, 3);
 
@@ -133,7 +132,7 @@ export default function HomePage() {
       {/* ── SERVICES GRID ── */}
       <section className="py-24 px-6 bg-[#f8f6f1]">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+          <div className="mb-16">
             <div>
               <p className="text-xs font-semibold uppercase tracking-widest text-teal-600 mb-3">What We Do</p>
               <h2
@@ -143,17 +142,10 @@ export default function HomePage() {
                 Every Corner of<br />Your Home
               </h2>
             </div>
-            <Link
-              href="/services"
-              className="flex items-center gap-2 text-teal-600 font-semibold hover:text-teal-700 transition-colors group shrink-0"
-            >
-              All services
-              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-            </Link>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {featuredServices.map((service, i) => (
+            {SERVICES.map((service) => (
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
@@ -189,21 +181,9 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* Remaining services as pills */}
-          <div className="mt-8 flex flex-wrap gap-3 justify-center">
-            {SERVICES.slice(6).map((s) => (
-              <Link
-                key={s.slug}
-                href={`/services/${s.slug}`}
-                className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-white border border-[#ede9df] text-sm font-medium text-charcoal hover:border-teal-300 hover:text-teal-700 hover:bg-teal-50 transition-all"
-              >
-                {s.title}
-              </Link>
-            ))}
-          </div>
-
           <p className="mt-10 text-center text-gray-600 text-lg">
-            For all of your interior contracting and remodeling projects, call us for an estimate.
+            We also offer general remodeling and interior finishing services — flooring, painting, cabinetry, and more.{" "}
+            <Link href="/contact" className="text-teal-600 font-semibold hover:text-teal-700">Call us for an estimate.</Link>
           </p>
         </div>
       </section>
