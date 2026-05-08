@@ -8,13 +8,24 @@ export const metadata: Metadata = {
   description: "Meet Brady and Taylor — the owners behind CMC Renovations. Learn why homeowners in Hamilton, OH trust us with their biggest renovation projects.",
 };
 
-export default function AboutPage() {
-  const showcase = GALLERY_IMAGES.slice(0, 4);
+const ABOUT_IMAGES = [
+  "/images/kitchenremodel.jpg",
+  "/images/BathroomRemodel2.jpg",
+  "/images/DeckBuild1.jpg",
+  "/images/ShowerRemodel4.jpg",
+  "/images/StaircaseBannister3.jpg",
+  "/images/BasementFinishing.jpg",
+];
 
+export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#1a1a1a] pt-36 pb-20 px-6 relative overflow-hidden">
+      <section className="relative bg-[#1a1a1a] pt-36 pb-20 px-6 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src="/images/KitchenRemodel10.jpg" alt="" className="w-full h-full object-cover opacity-15" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] via-[#1a1a1a]/90 to-[#1a1a1a]/70" />
+        </div>
         <div className="absolute left-0 top-0 bottom-0 w-1.5" style={{ background: "var(--teal)" }} />
         <div className="max-w-7xl mx-auto relative z-10">
           <p className="text-xs font-semibold uppercase tracking-widest text-teal-400 mb-4">Our Story</p>
@@ -56,9 +67,9 @@ export default function AboutPage() {
           </div>
 
           <div className="grid grid-cols-2 gap-4">
-            {showcase.map((img, i) => (
-              <div key={i} className="rounded-2xl overflow-hidden aspect-square">
-                <img src={img.src} alt={img.alt} className="w-full h-full object-cover" />
+            {ABOUT_IMAGES.slice(0, 4).map((src, i) => (
+              <div key={i} className={`rounded-2xl overflow-hidden ${i === 0 ? "aspect-square" : i === 1 ? "aspect-[4/3]" : "aspect-square"}`}>
+                <img src={src} alt="CMC Renovations project" className="w-full h-full object-cover" />
               </div>
             ))}
           </div>
@@ -103,6 +114,17 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Project showcase strip */}
+      <section className="py-12 bg-[#f8f6f1] overflow-hidden">
+        <div className="flex gap-4 animate-none px-6">
+          {ABOUT_IMAGES.map((src, i) => (
+            <div key={i} className="shrink-0 w-72 h-48 rounded-2xl overflow-hidden">
+              <img src={src} alt="CMC Renovations project" className="w-full h-full object-cover" />
+            </div>
+          ))}
         </div>
       </section>
 
