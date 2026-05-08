@@ -33,8 +33,14 @@ export default function BlogPostPage({ params }: Props) {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#1a1a1a] pt-32 pb-16 px-6">
-        <div className="max-w-3xl mx-auto">
+      <section className="relative bg-[#1a1a1a] pt-32 pb-16 px-6 overflow-hidden">
+        {post.image && (
+          <div className="absolute inset-0">
+            <img src={post.image} alt={post.title} className="w-full h-full object-cover opacity-20" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] via-[#1a1a1a]/80 to-[#1a1a1a]/60" />
+          </div>
+        )}
+        <div className="max-w-3xl mx-auto relative z-10">
           <Link
             href="/blog"
             className="inline-flex items-center gap-2 text-teal-400 text-sm font-medium hover:text-teal-300 transition-colors mb-8"
@@ -66,6 +72,11 @@ export default function BlogPostPage({ params }: Props) {
       {/* Content */}
       <section className="py-16 px-6 bg-[#f8f6f1]">
         <div className="max-w-3xl mx-auto">
+          {post.image && (
+            <div className="rounded-2xl overflow-hidden mb-10 -mt-24 relative z-20 shadow-xl">
+              <img src={post.image} alt={post.title} className="w-full h-72 object-cover" />
+            </div>
+          )}
           <div className="bg-white rounded-2xl border border-[#ede9df] p-8 md:p-12">
             <p className="text-gray-700 text-lg leading-relaxed whitespace-pre-line">
               {post.content}

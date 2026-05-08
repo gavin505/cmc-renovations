@@ -134,11 +134,20 @@ export default function ServicePage({ params }: Props) {
               <Link
                 key={s.slug}
                 href={`/services/${s.slug}`}
-                className="group p-5 rounded-2xl bg-white border border-[#ede9df] hover:border-teal-200 hover:shadow-md transition-all"
+                className="group rounded-2xl bg-white border border-[#ede9df] hover:border-teal-200 hover:shadow-md transition-all overflow-hidden"
               >
-                <h3 className="font-bold text-charcoal text-sm group-hover:text-teal-700 transition-colors">
-                  {s.title}
-                </h3>
+                <div className="h-32 overflow-hidden">
+                  <img
+                    src={s.heroImage}
+                    alt={s.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-5">
+                  <h3 className="font-bold text-charcoal text-sm group-hover:text-teal-700 transition-colors">
+                    {s.title}
+                  </h3>
+                </div>
               </Link>
             ))}
           </div>

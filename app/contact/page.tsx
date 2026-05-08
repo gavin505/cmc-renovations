@@ -22,7 +22,11 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#1a1a1a] pt-36 pb-20 px-6 relative overflow-hidden">
+      <section className="relative bg-[#1a1a1a] pt-36 pb-20 px-6 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src="/images/DoorInstallation2.jpg" alt="" className="w-full h-full object-cover opacity-15" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] via-[#1a1a1a]/90 to-[#1a1a1a]/70" />
+        </div>
         <div className="absolute left-0 top-0 bottom-0 w-1.5" style={{ background: "var(--teal)" }} />
         <div className="max-w-7xl mx-auto relative z-10">
           <p className="text-xs font-semibold uppercase tracking-widest text-teal-400 mb-4">Get in Touch</p>
@@ -186,6 +190,14 @@ export default function ContactPage() {
                   </li>
                 ))}
               </ul>
+            </div>
+
+            <div className="rounded-2xl overflow-hidden">
+              <img
+                src="/images/ShowerRemodel5.jpg"
+                alt="CMC Renovations bathroom project"
+                className="w-full h-48 object-cover"
+              />
             </div>
           </div>
         </div>

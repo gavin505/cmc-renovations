@@ -1,4 +1,4 @@
-import { LOCATIONS, SERVICES, COMPANY } from "@/lib/data";
+import { LOCATIONS, SERVICES, COMPANY, LOCATION_IMAGES } from "@/lib/data";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, MapPin, Phone } from "lucide-react";
@@ -23,10 +23,23 @@ export default function LocationPage({ params }: Props) {
   const loc = LOCATIONS.find((l) => l.slug === params.slug);
   if (!loc) notFound();
 
+  const locIndex = LOCATIONS.findIndex((l) => l.slug === params.slug);
+  const heroImg = LOCATION_IMAGES[locIndex % LOCATION_IMAGES.length];
+  const showcaseImages = [
+    LOCATION_IMAGES[(locIndex) % LOCATION_IMAGES.length],
+    LOCATION_IMAGES[(locIndex + 1) % LOCATION_IMAGES.length],
+    LOCATION_IMAGES[(locIndex + 2) % LOCATION_IMAGES.length],
+    LOCATION_IMAGES[(locIndex + 3) % LOCATION_IMAGES.length],
+  ];
+
   return (
     <>
       {/* Hero */}
       <section className="relative bg-[#1a1a1a] pt-36 pb-24 px-6 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={heroImg} alt="" className="w-full h-full object-cover opacity-20" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] via-[#1a1a1a]/85 to-[#1a1a1a]/60" />
+        </div>
         <div className="absolute left-0 top-0 bottom-0 w-1.5" style={{ background: "var(--teal)" }} />
         <div
           className="absolute top-1/2 right-16 -translate-y-1/2 text-[18vw] font-bold text-white/[0.03] select-none pointer-events-none leading-none hidden lg:block"
@@ -119,6 +132,37 @@ export default function LocationPage({ params }: Props) {
                 </Link>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Recent work showcase */}
+      <section className="py-16 px-6 bg-[#f8f6f1]">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-end justify-between mb-8">
+            <h2
+              className="text-2xl font-bold text-charcoal"
+              style={{ fontFamily: "var(--font-playfair)" }}
+            >
+              Recent Work Near {loc.name}
+            </h2>
+            <Link
+              href="/gallery"
+              className="flex items-center gap-2 text-teal-600 font-semibold text-sm hover:text-teal-700 transition-colors group"
+            >
+              View full gallery <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {showcaseImages.map((src, i) => (
+              <Link href="/gallery" key={i} className="group rounded-2xl overflow-hidden aspect-[4/3]">
+                <img
+                  src={src}
+                  alt="CMC Renovations project"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </Link>
+            ))}
           </div>
         </div>
       </section>

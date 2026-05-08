@@ -24,8 +24,19 @@ function driveImg(id: string) {
 }
 
 export const GALLERY_IMAGES = [
-  { src: "/images/bathroomremodel4.jpg", alt: "Bathroom Remodel", category: "bathroom" },
-  { src: "/images/bathroomremodel9.jpg", alt: "Bathroom Remodel", category: "bathroom" },
+  // Bathroom
+  { src: "/images/BathroomRemodel1.jpg", alt: "Bathroom Remodel", category: "bathroom" },
+  { src: "/images/BathroomRemodel2.jpg", alt: "Bathroom Remodel", category: "bathroom" },
+  { src: "/images/BathroomRemodel5.jpg", alt: "Bathroom Remodel", category: "bathroom" },
+  { src: "/images/BathroomRemodel7.jpg", alt: "Bathroom Remodel", category: "bathroom" },
+  { src: "/images/BathroomRemodel9.PNG", alt: "Bathroom Remodel", category: "bathroom" },
+  { src: "/images/showerremodel.jpg", alt: "Shower Remodel", category: "bathroom" },
+  { src: "/images/ShowerRemodel2.jpg", alt: "Shower Remodel", category: "bathroom" },
+  { src: "/images/ShowerRemodel3.jpg", alt: "Shower Remodel", category: "bathroom" },
+  { src: "/images/ShowerRemodel4.jpg", alt: "Shower Remodel", category: "bathroom" },
+  { src: "/images/ShowerRemodel5.jpg", alt: "Shower Remodel", category: "bathroom" },
+  { src: "/images/ShowerRemodel6.jpg", alt: "Shower Remodel", category: "bathroom" },
+  { src: "/images/ShowerRemodel7.jpg", alt: "Shower Remodel", category: "bathroom" },
   { src: driveImg("1iu_M4Rp5ejKrBZJOq8Vwdw8faO3XDbg1"), alt: "Bathroom Remodel", category: "bathroom" },
   { src: driveImg("110S2wXCvHiZ-IytePjX4NCYecGEbYL_D"), alt: "Bathroom Remodel", category: "bathroom" },
   { src: driveImg("14MKplisEsLqn_xTkufD5SDr231Gy47RH"), alt: "Bathroom Remodel", category: "bathroom" },
@@ -35,17 +46,60 @@ export const GALLERY_IMAGES = [
   { src: driveImg("1bRkczNZV7Q_RIHH7FM-mFyPdCDQUoYn8"), alt: "Bathtub Remodel", category: "bathroom" },
   { src: driveImg("1svzJsnbdfqKXSCAbC0Nwa2a9WlFrq5T2"), alt: "Shower Remodel", category: "bathroom" },
   { src: driveImg("118lZXrfUUCB5-i36YAUWO3nvevEvLtTa"), alt: "Shower Remodel", category: "bathroom" },
+  // Basement
+  { src: "/images/BasementFinishing.jpg", alt: "Basement Finishing", category: "basement" },
+  { src: "/images/BasementRemodel2.jpg", alt: "Basement Remodel", category: "basement" },
+  { src: "/images/BasementRemodel3.jpg", alt: "Basement Remodel", category: "basement" },
   { src: driveImg("1lmNvYwB3tbFn5YhGc_uIXoTyXGnYS48U"), alt: "Basement Finishing", category: "basement" },
   { src: driveImg("1bPq4WWirxZa48I5p8vVAtvox27AorSMc"), alt: "Basement Remodel", category: "basement" },
   { src: driveImg("1d1Cam005ec1NKwUqJc2bbmcvTgrG5xJ7"), alt: "Basement Remodel", category: "basement" },
   { src: driveImg("1fUBLF_B7g_zW1Ix0qqqz9D76uJKRDVe9"), alt: "Basement Remodel", category: "basement" },
   { src: driveImg("1uytWscypZGz4kqG4XxDWpJlfc9Scrth6"), alt: "Basement In Progress", category: "basement" },
   { src: driveImg("1wT20S0nBPPUPeaa_eXvRVTcCzhXQJR45"), alt: "Basement In Progress", category: "basement" },
+  // Kitchen
+  { src: "/images/kitchenremodel.jpg", alt: "Kitchen Remodel", category: "kitchen" },
+  { src: "/images/KitchenRemodel2.jpg", alt: "Kitchen Remodel", category: "kitchen" },
+  { src: "/images/KitchenRemodel3.PNG", alt: "Kitchen Remodel", category: "kitchen" },
+  { src: "/images/KitchenRemodel4.PNG", alt: "Kitchen Remodel", category: "kitchen" },
+  { src: "/images/KitchenRemodel5.PNG", alt: "Kitchen Remodel", category: "kitchen" },
+  { src: "/images/KitchenRemodel6.PNG", alt: "Kitchen Remodel", category: "kitchen" },
+  { src: "/images/KitchenRemodel7.jpg", alt: "Kitchen Remodel", category: "kitchen" },
+  { src: "/images/KitchenRemodel8.PNG", alt: "Kitchen Remodel", category: "kitchen" },
+  { src: "/images/KitchenRemodel9.jpg", alt: "Kitchen Remodel", category: "kitchen" },
+  { src: "/images/KitchenRemodel10.jpg", alt: "Kitchen Remodel", category: "kitchen" },
+  { src: driveImg("1UEZEwXMdeveh-wKqPOmY4S_eEZnZ3hsz"), alt: "Kitchen Remodel", category: "kitchen" },
+  { src: driveImg("1zhdx04dzclEqoiybtHVQHfp7XsTCJp64"), alt: "Kitchen Remodel", category: "kitchen" },
+  // Exterior
+  { src: "/images/DeckBuild.PNG", alt: "Deck Build", category: "exterior" },
+  { src: "/images/DeckBuild1.jpg", alt: "Deck Build", category: "exterior" },
+  { src: "/images/DeckBuild2.jpg", alt: "Deck Build", category: "exterior" },
+  { src: "/images/DeckBuild3.jpg", alt: "Deck Build", category: "exterior" },
+  { src: "/images/DeckBuild4.jpg", alt: "Deck Build", category: "exterior" },
+  { src: "/images/DeckBuild5.jpg", alt: "Deck Build", category: "exterior" },
+  { src: "/images/DeckBuild6.PNG", alt: "Deck Build", category: "exterior" },
+  { src: "/images/CoveredDeckBuild.jpg", alt: "Covered Deck Build", category: "exterior" },
+  { src: "/images/OutdoorBannister.PNG", alt: "Outdoor Bannister", category: "exterior" },
+  { src: "/images/OutdoorBannister1.PNG", alt: "Outdoor Bannister", category: "exterior" },
   { src: driveImg("1WVrSLS_Ho4zhVuGKVm4MMjsR0fvy0yJh"), alt: "Deck Build", category: "exterior" },
   { src: driveImg("1yd6tswEFnEmb3w102fE4VfjjAeprY7Zz"), alt: "Deck Build", category: "exterior" },
   { src: driveImg("1aqeA0S2WZK-C4pb5RkgEz9RnsE0PVLkd"), alt: "Deck Build", category: "exterior" },
   { src: driveImg("1y1DJdvTXcD-PD_4fN4FSPGuKGKOvq1Hn"), alt: "Deck Build", category: "exterior" },
   { src: driveImg("1XBRmmG3LctBpfKmnlfFzGEeLhEqZilQ0"), alt: "Covered Deck Build", category: "exterior" },
+  // Interior
+  { src: "/images/DoorInstallation.jpg", alt: "Door Installation", category: "interior" },
+  { src: "/images/DoorInstallation1.jpg", alt: "Door Installation", category: "interior" },
+  { src: "/images/DoorInstallation2.jpg", alt: "Door Installation", category: "interior" },
+  { src: "/images/DoorInstallation3.jpg", alt: "Door Installation", category: "interior" },
+  { src: "/images/DoorInstallation4.jpg", alt: "Door Installation", category: "interior" },
+  { src: "/images/StaircaseBannister.PNG", alt: "Staircase Bannister", category: "interior" },
+  { src: "/images/StaircaseBannister1.PNG", alt: "Staircase Bannister", category: "interior" },
+  { src: "/images/StaircaseBannister2.PNG", alt: "Staircase Bannister", category: "interior" },
+  { src: "/images/StaircaseBannister3.jpg", alt: "Staircase Bannister", category: "interior" },
+  { src: "/images/StaircaseBannister4.jpg", alt: "Staircase Bannister", category: "interior" },
+  { src: "/images/StaircaseBannister5.jpg", alt: "Staircase Bannister", category: "interior" },
+  { src: "/images/StaircaseBannister6.PNG", alt: "Staircase Bannister", category: "interior" },
+  { src: "/images/BookshelfBuiltIns1.jpg", alt: "Bookshelf Built-Ins", category: "interior" },
+  { src: "/images/flooring.jpg", alt: "Flooring Installation", category: "interior" },
   { src: driveImg("1K1Lex_lWuJK7HrXpH5KXC6QSAiEHhnjH"), alt: "Door Installation", category: "interior" },
   { src: driveImg("1sTv6YsmUGvKzfqM6wyhI6rwN6fqdps-h"), alt: "Door Installation", category: "interior" },
   { src: driveImg("1W1pyOrG8gUnUWousKCXo57FAEU1k3leb"), alt: "Door Installation", category: "interior" },
@@ -54,10 +108,21 @@ export const GALLERY_IMAGES = [
   { src: driveImg("1T8OUyfrcmjPWDimPLaNqB7ygz5L-ZSJa"), alt: "Staircase Bannister", category: "interior" },
   { src: driveImg("1HOZWBg47nAzwA4iU3Dt3oOS2hboeEty-"), alt: "Staircase Bannister", category: "interior" },
   { src: driveImg("1a_IymyZb9TLFE7NOVNbAMim5imDiOBHf"), alt: "Staircase Bannister", category: "interior" },
-  { src: "/images/kitchenremodel.jpg", alt: "Kitchen Remodel", category: "kitchen" },
-  { src: "/images/kitchenremodel8.jpg", alt: "Kitchen Remodel", category: "kitchen" },
-  { src: driveImg("1UEZEwXMdeveh-wKqPOmY4S_eEZnZ3hsz"), alt: "Kitchen Remodel", category: "kitchen" },
-  { src: driveImg("1zhdx04dzclEqoiybtHVQHfp7XsTCJp64"), alt: "Kitchen Remodel", category: "kitchen" },
+  // Project photos
+  { src: "/images/IMG_0277.PNG", alt: "Renovation Project", category: "interior" },
+  { src: "/images/IMG_0496.jpg", alt: "Renovation Project", category: "bathroom" },
+  { src: "/images/IMG_0506.jpg", alt: "Renovation Project", category: "bathroom" },
+  { src: "/images/IMG_0542.jpg", alt: "Renovation Project", category: "kitchen" },
+  { src: "/images/IMG_0665.PNG", alt: "Renovation Project", category: "interior" },
+  { src: "/images/IMG_0666.PNG", alt: "Renovation Project", category: "interior" },
+  { src: "/images/IMG_0667.PNG", alt: "Renovation Project", category: "interior" },
+  { src: "/images/IMG_0707.jpg", alt: "Renovation Project", category: "exterior" },
+  { src: "/images/IMG_0901.jpg", alt: "Renovation Project", category: "basement" },
+  { src: "/images/IMG_0902.jpg", alt: "Renovation Project", category: "basement" },
+  { src: "/images/IMG_0903.jpg", alt: "Renovation Project", category: "basement" },
+  { src: "/images/IMG_1553.jpg", alt: "Renovation Project", category: "kitchen" },
+  { src: "/images/IMG_1581.jpg", alt: "Renovation Project", category: "exterior" },
+  { src: "/images/IMG_2297.jpg", alt: "Renovation Project", category: "interior" },
 ];
 
 export const SERVICES = [
@@ -80,7 +145,11 @@ export const SERVICES = [
     heroImage: "/images/kitchenremodel.jpg",
     galleryImages: [
       "/images/kitchenremodel.jpg",
-      "/images/kitchenremodel8.jpg",
+      "/images/KitchenRemodel2.jpg",
+      "/images/KitchenRemodel7.jpg",
+      "/images/KitchenRemodel8.PNG",
+      "/images/KitchenRemodel9.jpg",
+      "/images/KitchenRemodel10.jpg",
       driveImg("1UEZEwXMdeveh-wKqPOmY4S_eEZnZ3hsz"),
       driveImg("1zhdx04dzclEqoiybtHVQHfp7XsTCJp64"),
     ],
@@ -101,10 +170,13 @@ export const SERVICES = [
       "Lighting & ventilation",
       "Accessibility modifications",
     ],
-    heroImage: "/images/bathroomremodel4.jpg",
+    heroImage: "/images/BathroomRemodel1.jpg",
     galleryImages: [
-      "/images/bathroomremodel4.jpg",
-      "/images/bathroomremodel9.jpg",
+      "/images/BathroomRemodel1.jpg",
+      "/images/BathroomRemodel2.jpg",
+      "/images/BathroomRemodel5.jpg",
+      "/images/BathroomRemodel7.jpg",
+      "/images/showerremodel.jpg",
       driveImg("1iu_M4Rp5ejKrBZJOq8Vwdw8faO3XDbg1"),
       driveImg("1bRkczNZV7Q_RIHH7FM-mFyPdCDQUoYn8"),
       driveImg("1svzJsnbdfqKXSCAbC0Nwa2a9WlFrq5T2"),
@@ -126,8 +198,11 @@ export const SERVICES = [
       "Custom bar & entertainment areas",
       "Waterproofing & moisture control",
     ],
-    heroImage: driveImg("1lmNvYwB3tbFn5YhGc_uIXoTyXGnYS48U"),
+    heroImage: "/images/BasementFinishing.jpg",
     galleryImages: [
+      "/images/BasementFinishing.jpg",
+      "/images/BasementRemodel2.jpg",
+      "/images/BasementRemodel3.jpg",
       driveImg("1lmNvYwB3tbFn5YhGc_uIXoTyXGnYS48U"),
       driveImg("1bPq4WWirxZa48I5p8vVAtvox27AorSMc"),
       driveImg("1fUBLF_B7g_zW1Ix0qqqz9D76uJKRDVe9"),
@@ -149,8 +224,12 @@ export const SERVICES = [
       "In-law suites",
       "Permit management & inspections",
     ],
-    heroImage: driveImg("1XBRmmG3LctBpfKmnlfFzGEeLhEqZilQ0"),
-    galleryImages: [driveImg("1XBRmmG3LctBpfKmnlfFzGEeLhEqZilQ0")],
+    heroImage: "/images/CoveredDeckBuild.jpg",
+    galleryImages: [
+      "/images/CoveredDeckBuild.jpg",
+      "/images/DeckBuild1.jpg",
+      driveImg("1XBRmmG3LctBpfKmnlfFzGEeLhEqZilQ0"),
+    ],
   },
   {
     slug: "general-contracting",
@@ -168,8 +247,13 @@ export const SERVICES = [
       "Quality control inspections",
       "Punch list completion",
     ],
-    heroImage: driveImg("1WVrSLS_Ho4zhVuGKVm4MMjsR0fvy0yJh"),
-    galleryImages: [driveImg("1WVrSLS_Ho4zhVuGKVm4MMjsR0fvy0yJh")],
+    heroImage: "/images/DeckBuild2.jpg",
+    galleryImages: [
+      "/images/DeckBuild2.jpg",
+      "/images/DeckBuild3.jpg",
+      "/images/DeckBuild4.jpg",
+      driveImg("1WVrSLS_Ho4zhVuGKVm4MMjsR0fvy0yJh"),
+    ],
   },
   {
     slug: "flooring-installation",
@@ -187,8 +271,12 @@ export const SERVICES = [
       "Transitions & trim work",
       "Heated floor systems",
     ],
-    heroImage: driveImg("1G01CbexRy5qKswPFyO_tGjfVxmP9U8_A"),
-    galleryImages: [driveImg("1G01CbexRy5qKswPFyO_tGjfVxmP9U8_A")],
+    heroImage: "/images/flooring.jpg",
+    galleryImages: [
+      "/images/flooring.jpg",
+      "/images/StaircaseBannister3.jpg",
+      driveImg("1G01CbexRy5qKswPFyO_tGjfVxmP9U8_A"),
+    ],
   },
   {
     slug: "interior-painting",
@@ -206,8 +294,12 @@ export const SERVICES = [
       "Trim, door & baseboard painting",
       "Color consultation",
     ],
-    heroImage: driveImg("1bPq4WWirxZa48I5p8vVAtvox27AorSMc"),
-    galleryImages: [driveImg("1bPq4WWirxZa48I5p8vVAtvox27AorSMc")],
+    heroImage: "/images/DoorInstallation1.jpg",
+    galleryImages: [
+      "/images/DoorInstallation1.jpg",
+      "/images/DoorInstallation2.jpg",
+      driveImg("1bPq4WWirxZa48I5p8vVAtvox27AorSMc"),
+    ],
   },
   {
     slug: "custom-cabinetry-built-ins",
@@ -225,8 +317,12 @@ export const SERVICES = [
       "Cabinet hardware & soft-close upgrades",
       "Painted & stained finishes",
     ],
-    heroImage: "/images/kitchenremodel8.jpg",
-    galleryImages: ["/images/kitchenremodel8.jpg"],
+    heroImage: "/images/BookshelfBuiltIns1.jpg",
+    galleryImages: [
+      "/images/BookshelfBuiltIns1.jpg",
+      "/images/KitchenRemodel8.PNG",
+      "/images/KitchenRemodel5.PNG",
+    ],
   },
   {
     slug: "home-office-remodeling",
@@ -244,8 +340,12 @@ export const SERVICES = [
       "Built-in storage & file organization",
       "Cable management",
     ],
-    heroImage: driveImg("1d1Cam005ec1NKwUqJc2bbmcvTgrG5xJ7"),
-    galleryImages: [driveImg("1d1Cam005ec1NKwUqJc2bbmcvTgrG5xJ7")],
+    heroImage: "/images/BasementRemodel2.jpg",
+    galleryImages: [
+      "/images/BasementRemodel2.jpg",
+      "/images/BasementRemodel3.jpg",
+      driveImg("1d1Cam005ec1NKwUqJc2bbmcvTgrG5xJ7"),
+    ],
   },
   {
     slug: "garage-conversions-remodels",
@@ -263,8 +363,12 @@ export const SERVICES = [
       "Electrical upgrades",
       "Garage door & entry improvements",
     ],
-    heroImage: driveImg("1aqeA0S2WZK-C4pb5RkgEz9RnsE0PVLkd"),
-    galleryImages: [driveImg("1aqeA0S2WZK-C4pb5RkgEz9RnsE0PVLkd")],
+    heroImage: "/images/DeckBuild5.jpg",
+    galleryImages: [
+      "/images/DeckBuild5.jpg",
+      "/images/DeckBuild6.PNG",
+      driveImg("1aqeA0S2WZK-C4pb5RkgEz9RnsE0PVLkd"),
+    ],
   },
 ];
 
@@ -273,6 +377,7 @@ export const BLOG_POSTS = [
     slug: "spring-renovation-checklist-2026",
     title: "Your Spring 2026 Home Renovation Checklist",
     date: "2026-05-05",
+    image: "/images/KitchenRemodel3.PNG",
     excerpt:
       "Spring is the perfect time to tackle those home improvement projects you've been putting off. Here's what should be at the top of your list this season.",
     content:
@@ -283,6 +388,7 @@ export const BLOG_POSTS = [
     slug: "choosing-the-right-flooring",
     title: "Hardwood vs. LVP: Choosing the Right Flooring for Your Home",
     date: "2026-04-21",
+    image: "/images/flooring.jpg",
     excerpt:
       "Hardwood and luxury vinyl plank are the two most popular flooring options we install. Here's how to decide which is right for your space.",
     content:
@@ -293,6 +399,7 @@ export const BLOG_POSTS = [
     slug: "bathroom-remodel-roi",
     title: "Is a Bathroom Remodel Worth It? ROI and What to Expect",
     date: "2026-04-07",
+    image: "/images/ShowerRemodel2.jpg",
     excerpt:
       "A bathroom remodel is one of the best investments you can make in your home. Here's what the numbers say and what to expect from the process.",
     content:
@@ -303,6 +410,7 @@ export const BLOG_POSTS = [
     slug: "basement-finishing-guide",
     title: "Finishing Your Basement: A Complete Guide for Ohio Homeowners",
     date: "2026-03-24",
+    image: "/images/BasementFinishing.jpg",
     excerpt:
       "A finished basement adds livable square footage to your home without the cost of an addition. Here's everything you need to know before starting.",
     content:
@@ -313,6 +421,7 @@ export const BLOG_POSTS = [
     slug: "kitchen-remodel-trends-2026",
     title: "2026 Kitchen Remodel Trends We're Seeing in Butler County",
     date: "2026-03-10",
+    image: "/images/KitchenRemodel7.jpg",
     excerpt:
       "Kitchen design is shifting toward cleaner lines, warmer tones, and smarter storage. Here's what homeowners in our area are asking for this year.",
     content:
@@ -323,6 +432,7 @@ export const BLOG_POSTS = [
     slug: "hiring-a-contractor-tips",
     title: "5 Things to Look for When Hiring a Renovation Contractor",
     date: "2026-02-24",
+    image: "/images/DeckBuild3.jpg",
     excerpt:
       "Not all contractors are created equal. Here's what to look for — and what to watch out for — when choosing someone to work on your home.",
     content:
@@ -333,12 +443,29 @@ export const BLOG_POSTS = [
     slug: "winter-home-maintenance",
     title: "Protect Your Investment: Winter Home Maintenance Tips",
     date: "2026-02-10",
+    image: "/images/StaircaseBannister5.jpg",
     excerpt:
       "Ohio winters are tough on homes. These maintenance steps can prevent costly damage and set you up for a smooth renovation season ahead.",
     content:
       "Ohio winters can be harsh on your home, but a little preventive maintenance goes a long way. Start by checking your home's insulation, especially in the attic and basement — poor insulation leads to ice dams, frozen pipes, and higher energy bills. Make sure your furnace filter is clean and your heating system has been serviced. Check weatherstripping around doors and windows; replacing worn seals is an inexpensive fix that makes a noticeable difference in comfort and efficiency. Inspect your roof and gutters for damage from fall storms — clogged or damaged gutters can cause ice buildup that leads to leaks. Inside, winter is an excellent time to plan spring projects. Scheduling your renovation estimate now means you'll be first in line when the weather breaks. At CMC Renovations, we offer free estimates year-round. If you're thinking about a kitchen remodel, bathroom update, or basement finishing project, getting on the calendar early ensures a smoother timeline and less waiting once work begins.",
     category: "Seasonal Tips",
   },
+];
+
+export const LOCATION_IMAGES = [
+  "/images/kitchenremodel.jpg",
+  "/images/BathroomRemodel1.jpg",
+  "/images/BasementFinishing.jpg",
+  "/images/DeckBuild1.jpg",
+  "/images/ShowerRemodel3.jpg",
+  "/images/KitchenRemodel9.jpg",
+  "/images/StaircaseBannister4.jpg",
+  "/images/DoorInstallation3.jpg",
+  "/images/BathroomRemodel5.jpg",
+  "/images/KitchenRemodel4.PNG",
+  "/images/DeckBuild4.jpg",
+  "/images/BookshelfBuiltIns1.jpg",
+  "/images/BasementRemodel3.jpg",
 ];
 
 export const LOCATIONS = [
