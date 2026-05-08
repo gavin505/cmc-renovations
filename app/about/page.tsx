@@ -55,13 +55,13 @@ export default function AboutPage() {
             </h2>
             <div className="prose text-gray-600 leading-relaxed space-y-4">
               <p>
-                CMC Renovations was built on a simple premise: homeowners deserve a contractor who shows up, communicates clearly, and takes personal responsibility for the outcome. That's what owner-operated means to us.
+                CMC Renovations LLC was established in 2023 with a simple premise: homeowners deserve a contractor who shows up, communicates clearly, and takes personal responsibility for the outcome. With over 15 years of combined remodeling experience, our team handles every aspect of your remodel in-house — flooring, cabinets, painting, countertops, and more.
               </p>
               <p>
-                When you hire CMC Renovations, you're hiring Brady and Taylor directly — not a company that will assign a project manager you've never met. We're on your job site every day, we answer your calls, and we stand behind every inch of work we deliver.
+                When you hire CMC Renovations, you're hiring Brady and Taylor directly — not a company that will assign a project manager you've never met. We're on your job site every day, we answer your calls, and we stand behind every inch of work we deliver. We pride ourselves on communicating with clients, being punctual for appointments, and following through on timelines.
               </p>
               <p>
-                We serve Hamilton and the greater Butler County area with a focus on detailed craftsmanship across kitchens, bathrooms, basements, home additions, and more. Every estimate is free. Every project gets our full attention.
+                We serve Hamilton and the greater Butler County area with a focus on detailed craftsmanship across kitchens, bathrooms, and basements. Every estimate is free. Every project gets our full attention.
               </p>
             </div>
           </div>
@@ -91,16 +91,16 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                title: "Transparency",
-                body: "Clear estimates, honest timelines, and upfront communication when anything changes. No surprises, no runaround.",
+                title: "Reliable",
+                body: "We show up on time, every time. No falling out of contact, no padding projects with downtime. When we set a timeline, we follow through.",
               },
               {
-                title: "Craftsmanship",
-                body: "We pay attention to every joint, seam, and finish surface. The details are what separate a renovation that looks good from one that lasts.",
+                title: "Responsive",
+                body: "We pride ourselves on clear, prompt communication. You'll always know what's happening with your project — we answer your calls and keep you informed every step of the way.",
               },
               {
-                title: "Accountability",
-                body: "As owners, we're personally responsible for every project. You can reach us directly — before, during, and after the work is done.",
+                title: "Comprehensive",
+                body: "We handle every aspect of your remodel in-house — flooring, cabinetry, painting, countertops, built-ins, and more. One team, one point of contact, from start to finish.",
               },
             ].map((v) => (
               <div key={v.title} className="p-8 bg-white rounded-2xl border border-[#d4cfc4]">

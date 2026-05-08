@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { COMPANY, SERVICES, LOCATIONS } from "@/lib/data";
-import { Phone, MapPin, Clock, Facebook, Instagram, Youtube } from "lucide-react";
+import { Phone, MapPin, Clock, Facebook } from "lucide-react";
 
 export default function Footer() {
   const primaryLocations = LOCATIONS.slice(0, 7);
@@ -50,20 +50,12 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-gray-400 text-sm leading-relaxed mb-6">
-            Owner-operated residential remodeling serving Hamilton and Butler County since day one. Brady and Taylor on every job.
+            Owner-operated residential remodeling serving Hamilton and Butler County. LLC est. 2023 with 15+ years of combined experience. Brady and Taylor on every job.
           </p>
           <div className="flex gap-3">
             <a href={COMPANY.social.facebook} target="_blank" rel="noopener noreferrer"
               className="p-2.5 rounded-xl bg-white/5 hover:bg-teal-600 transition-colors">
               <Facebook size={16} />
-            </a>
-            <a href={COMPANY.social.instagram} target="_blank" rel="noopener noreferrer"
-              className="p-2.5 rounded-xl bg-white/5 hover:bg-teal-600 transition-colors">
-              <Instagram size={16} />
-            </a>
-            <a href={COMPANY.social.youtube} target="_blank" rel="noopener noreferrer"
-              className="p-2.5 rounded-xl bg-white/5 hover:bg-teal-600 transition-colors">
-              <Youtube size={16} />
             </a>
           </div>
           <div className="mt-6 flex flex-wrap gap-3">

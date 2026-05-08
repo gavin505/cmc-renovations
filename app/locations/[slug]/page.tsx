@@ -95,7 +95,7 @@ export default function LocationPage({ params }: Props) {
               CMC Renovations has been serving {loc.name} and the wider {loc.county} area with owner-led residential remodeling. We understand local permit processes, contractor requirements, and what {loc.name} homeowners expect from their renovation investment.
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
-              Whether you're updating a kitchen, finishing a basement, or adding square footage to your {loc.name} home, you'll have Brady and Taylor directly managing your project — on site daily, responsive to every question.
+              Whether you're updating a kitchen, finishing a basement, or remodeling a bathroom in your {loc.name} home, you'll have Brady and Taylor directly managing your project — on site daily, responsive to every question.
             </p>
             <ul className="space-y-3">
               {[

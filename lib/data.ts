@@ -9,8 +9,6 @@ export const COMPANY = {
   hours: "Mon–Fri: 8:00 AM – 5:00 PM",
   social: {
     facebook: "https://facebook.com/p/CMC-Renovations-LLC-100090580519509/",
-    instagram: "https://instagram.com/cmcrenovations/",
-    youtube: "https://youtube.com/@cmcrenovations",
     yelp: "https://yelp.com/biz/cmc-renovations-hamilton",
     google: "https://maps.app.goo.gl/JsP2qHb66VdUTdg56",
   },
@@ -206,29 +204,6 @@ export const SERVICES = [
       driveImg("1lmNvYwB3tbFn5YhGc_uIXoTyXGnYS48U"),
       driveImg("1bPq4WWirxZa48I5p8vVAtvox27AorSMc"),
       driveImg("1fUBLF_B7g_zW1Ix0qqqz9D76uJKRDVe9"),
-    ],
-  },
-  {
-    slug: "home-additions",
-    title: "Home Additions",
-    shortTitle: "Additions",
-    icon: "➕",
-    headline: "Expand Your Space, Enhance Your Life",
-    description:
-      "When your home no longer fits your life, we add square footage that integrates naturally with your existing structure — seamless in design, sound in construction.",
-    features: [
-      "Room additions & bump-outs",
-      "Second-story additions",
-      "Sunrooms & enclosed patios",
-      "Garage additions",
-      "In-law suites",
-      "Permit management & inspections",
-    ],
-    heroImage: "/images/CoveredDeckBuild.jpg",
-    galleryImages: [
-      "/images/CoveredDeckBuild.jpg",
-      "/images/DeckBuild1.jpg",
-      driveImg("1XBRmmG3LctBpfKmnlfFzGEeLhEqZilQ0"),
     ],
   },
   {
@@ -470,18 +445,14 @@ export const LOCATION_IMAGES = [
 
 export const LOCATIONS = [
   { slug: "hamilton", name: "Hamilton", county: "Butler County", state: "OH", primary: true },
-  { slug: "fairfield", name: "Fairfield", county: "Butler County", state: "OH" },
-  { slug: "fairfield-township", name: "Fairfield Township", county: "Butler County", state: "OH" },
-  { slug: "west-chester-township", name: "West Chester Township", county: "Butler County", state: "OH" },
-  { slug: "liberty-township", name: "Liberty Township", county: "Butler County", state: "OH" },
-  { slug: "monroe", name: "Monroe", county: "Butler County", state: "OH" },
-  { slug: "hanover-township", name: "Hanover Township", county: "Butler County", state: "OH" },
-  { slug: "madison-township", name: "Madison Township", county: "Butler County", state: "OH" },
-  { slug: "milford-township", name: "Milford Township", county: "Butler County", state: "OH" },
-  { slug: "oxford", name: "Oxford", county: "Butler County", state: "OH" },
-  { slug: "reily-township", name: "Reily Township", county: "Butler County", state: "OH" },
-  { slug: "sharonville", name: "Sharonville", county: "Hamilton County", state: "OH" },
   { slug: "trenton", name: "Trenton", county: "Butler County", state: "OH" },
+  { slug: "oxford", name: "Oxford", county: "Butler County", state: "OH" },
+  { slug: "fairfield", name: "Fairfield", county: "Butler County", state: "OH" },
+  { slug: "liberty-township", name: "Liberty Township", county: "Butler County", state: "OH" },
+  { slug: "west-chester-township", name: "West Chester Township", county: "Butler County", state: "OH" },
+  { slug: "somerville", name: "Somerville", county: "Butler County", state: "OH" },
+  { slug: "ross", name: "Ross", county: "Butler County", state: "OH" },
+  { slug: "monroe", name: "Monroe", county: "Butler County", state: "OH" },
 ];
 
 export const REVIEWS = [
