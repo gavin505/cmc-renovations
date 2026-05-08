@@ -15,12 +15,6 @@ export const COMPANY = {
   owners: ["Brady", "Taylor"],
 };
 
-// Google Drive direct image URLs — using the file IDs from the client's Drive folder
-// Format: https://drive.google.com/uc?export=view&id=FILE_ID
-function driveImg(id: string) {
-  return `https://drive.google.com/uc?export=view&id=${id}`;
-}
-
 export const GALLERY_IMAGES = [
   // Bathroom
   { src: "/images/BathroomRemodel1.jpg", alt: "Bathroom Remodel", category: "bathroom" },
@@ -35,25 +29,10 @@ export const GALLERY_IMAGES = [
   { src: "/images/ShowerRemodel5.jpg", alt: "Shower Remodel", category: "bathroom" },
   { src: "/images/ShowerRemodel6.jpg", alt: "Shower Remodel", category: "bathroom" },
   { src: "/images/ShowerRemodel7.jpg", alt: "Shower Remodel", category: "bathroom" },
-  { src: driveImg("1iu_M4Rp5ejKrBZJOq8Vwdw8faO3XDbg1"), alt: "Bathroom Remodel", category: "bathroom" },
-  { src: driveImg("110S2wXCvHiZ-IytePjX4NCYecGEbYL_D"), alt: "Bathroom Remodel", category: "bathroom" },
-  { src: driveImg("14MKplisEsLqn_xTkufD5SDr231Gy47RH"), alt: "Bathroom Remodel", category: "bathroom" },
-  { src: driveImg("1Jk3yyZRpF2zBISh13p1PkAeGVih78Q6R"), alt: "Bathroom Remodel", category: "bathroom" },
-  { src: driveImg("1iQfQ9eBrXMDkDpz8JXB9OP6mmTrMWEFp"), alt: "Bathroom Remodel", category: "bathroom" },
-  { src: driveImg("1Hl1b1ItFkk7QkAW_dI5oPOOs5q9jdk4T"), alt: "Bathroom Remodel", category: "bathroom" },
-  { src: driveImg("1bRkczNZV7Q_RIHH7FM-mFyPdCDQUoYn8"), alt: "Bathtub Remodel", category: "bathroom" },
-  { src: driveImg("1svzJsnbdfqKXSCAbC0Nwa2a9WlFrq5T2"), alt: "Shower Remodel", category: "bathroom" },
-  { src: driveImg("118lZXrfUUCB5-i36YAUWO3nvevEvLtTa"), alt: "Shower Remodel", category: "bathroom" },
   // Basement
   { src: "/images/BasementFinishing.jpg", alt: "Basement Finishing", category: "basement" },
   { src: "/images/BasementRemodel2.jpg", alt: "Basement Remodel", category: "basement" },
   { src: "/images/BasementRemodel3.jpg", alt: "Basement Remodel", category: "basement" },
-  { src: driveImg("1lmNvYwB3tbFn5YhGc_uIXoTyXGnYS48U"), alt: "Basement Finishing", category: "basement" },
-  { src: driveImg("1bPq4WWirxZa48I5p8vVAtvox27AorSMc"), alt: "Basement Remodel", category: "basement" },
-  { src: driveImg("1d1Cam005ec1NKwUqJc2bbmcvTgrG5xJ7"), alt: "Basement Remodel", category: "basement" },
-  { src: driveImg("1fUBLF_B7g_zW1Ix0qqqz9D76uJKRDVe9"), alt: "Basement Remodel", category: "basement" },
-  { src: driveImg("1uytWscypZGz4kqG4XxDWpJlfc9Scrth6"), alt: "Basement In Progress", category: "basement" },
-  { src: driveImg("1wT20S0nBPPUPeaa_eXvRVTcCzhXQJR45"), alt: "Basement In Progress", category: "basement" },
   // Kitchen
   { src: "/images/kitchenremodel.jpg", alt: "Kitchen Remodel", category: "kitchen" },
   { src: "/images/KitchenRemodel2.jpg", alt: "Kitchen Remodel", category: "kitchen" },
@@ -65,8 +44,6 @@ export const GALLERY_IMAGES = [
   { src: "/images/KitchenRemodel8.PNG", alt: "Kitchen Remodel", category: "kitchen" },
   { src: "/images/KitchenRemodel9.jpg", alt: "Kitchen Remodel", category: "kitchen" },
   { src: "/images/KitchenRemodel10.jpg", alt: "Kitchen Remodel", category: "kitchen" },
-  { src: driveImg("1UEZEwXMdeveh-wKqPOmY4S_eEZnZ3hsz"), alt: "Kitchen Remodel", category: "kitchen" },
-  { src: driveImg("1zhdx04dzclEqoiybtHVQHfp7XsTCJp64"), alt: "Kitchen Remodel", category: "kitchen" },
   // Exterior
   { src: "/images/DeckBuild.PNG", alt: "Deck Build", category: "exterior" },
   { src: "/images/DeckBuild1.jpg", alt: "Deck Build", category: "exterior" },
@@ -78,11 +55,6 @@ export const GALLERY_IMAGES = [
   { src: "/images/CoveredDeckBuild.jpg", alt: "Covered Deck Build", category: "exterior" },
   { src: "/images/OutdoorBannister.PNG", alt: "Outdoor Bannister", category: "exterior" },
   { src: "/images/OutdoorBannister1.PNG", alt: "Outdoor Bannister", category: "exterior" },
-  { src: driveImg("1WVrSLS_Ho4zhVuGKVm4MMjsR0fvy0yJh"), alt: "Deck Build", category: "exterior" },
-  { src: driveImg("1yd6tswEFnEmb3w102fE4VfjjAeprY7Zz"), alt: "Deck Build", category: "exterior" },
-  { src: driveImg("1aqeA0S2WZK-C4pb5RkgEz9RnsE0PVLkd"), alt: "Deck Build", category: "exterior" },
-  { src: driveImg("1y1DJdvTXcD-PD_4fN4FSPGuKGKOvq1Hn"), alt: "Deck Build", category: "exterior" },
-  { src: driveImg("1XBRmmG3LctBpfKmnlfFzGEeLhEqZilQ0"), alt: "Covered Deck Build", category: "exterior" },
   // Interior
   { src: "/images/DoorInstallation.jpg", alt: "Door Installation", category: "interior" },
   { src: "/images/DoorInstallation1.jpg", alt: "Door Installation", category: "interior" },
@@ -98,14 +70,6 @@ export const GALLERY_IMAGES = [
   { src: "/images/StaircaseBannister6.PNG", alt: "Staircase Bannister", category: "interior" },
   { src: "/images/BookshelfBuiltIns1.jpg", alt: "Bookshelf Built-Ins", category: "interior" },
   { src: "/images/flooring.jpg", alt: "Flooring Installation", category: "interior" },
-  { src: driveImg("1K1Lex_lWuJK7HrXpH5KXC6QSAiEHhnjH"), alt: "Door Installation", category: "interior" },
-  { src: driveImg("1sTv6YsmUGvKzfqM6wyhI6rwN6fqdps-h"), alt: "Door Installation", category: "interior" },
-  { src: driveImg("1W1pyOrG8gUnUWousKCXo57FAEU1k3leb"), alt: "Door Installation", category: "interior" },
-  { src: driveImg("1-_JoNMWY1BBwGO_V10p8TICB1M41etp1"), alt: "Door Installation", category: "interior" },
-  { src: driveImg("1G01CbexRy5qKswPFyO_tGjfVxmP9U8_A"), alt: "Staircase Bannister", category: "interior" },
-  { src: driveImg("1T8OUyfrcmjPWDimPLaNqB7ygz5L-ZSJa"), alt: "Staircase Bannister", category: "interior" },
-  { src: driveImg("1HOZWBg47nAzwA4iU3Dt3oOS2hboeEty-"), alt: "Staircase Bannister", category: "interior" },
-  { src: driveImg("1a_IymyZb9TLFE7NOVNbAMim5imDiOBHf"), alt: "Staircase Bannister", category: "interior" },
   // Project photos
   { src: "/images/IMG_0277.PNG", alt: "Renovation Project", category: "interior" },
   { src: "/images/IMG_0496.jpg", alt: "Renovation Project", category: "bathroom" },
@@ -148,8 +112,8 @@ export const SERVICES = [
       "/images/KitchenRemodel8.PNG",
       "/images/KitchenRemodel9.jpg",
       "/images/KitchenRemodel10.jpg",
-      driveImg("1UEZEwXMdeveh-wKqPOmY4S_eEZnZ3hsz"),
-      driveImg("1zhdx04dzclEqoiybtHVQHfp7XsTCJp64"),
+      "/images/KitchenRemodel3.PNG",
+      "/images/KitchenRemodel4.PNG",
     ],
   },
   {
@@ -175,9 +139,9 @@ export const SERVICES = [
       "/images/BathroomRemodel5.jpg",
       "/images/BathroomRemodel7.jpg",
       "/images/showerremodel.jpg",
-      driveImg("1iu_M4Rp5ejKrBZJOq8Vwdw8faO3XDbg1"),
-      driveImg("1bRkczNZV7Q_RIHH7FM-mFyPdCDQUoYn8"),
-      driveImg("1svzJsnbdfqKXSCAbC0Nwa2a9WlFrq5T2"),
+      "/images/BathroomRemodel9.PNG",
+      "/images/ShowerRemodel2.jpg",
+      "/images/ShowerRemodel3.jpg",
     ],
   },
   {
@@ -201,9 +165,9 @@ export const SERVICES = [
       "/images/BasementFinishing.jpg",
       "/images/BasementRemodel2.jpg",
       "/images/BasementRemodel3.jpg",
-      driveImg("1lmNvYwB3tbFn5YhGc_uIXoTyXGnYS48U"),
-      driveImg("1bPq4WWirxZa48I5p8vVAtvox27AorSMc"),
-      driveImg("1fUBLF_B7g_zW1Ix0qqqz9D76uJKRDVe9"),
+      "/images/IMG_0901.jpg",
+      "/images/IMG_0902.jpg",
+      "/images/IMG_0903.jpg",
     ],
   },
   {
@@ -227,7 +191,7 @@ export const SERVICES = [
       "/images/DeckBuild2.jpg",
       "/images/DeckBuild3.jpg",
       "/images/DeckBuild4.jpg",
-      driveImg("1WVrSLS_Ho4zhVuGKVm4MMjsR0fvy0yJh"),
+      "/images/DeckBuild1.jpg",
     ],
   },
   {
@@ -250,7 +214,7 @@ export const SERVICES = [
     galleryImages: [
       "/images/flooring.jpg",
       "/images/StaircaseBannister3.jpg",
-      driveImg("1G01CbexRy5qKswPFyO_tGjfVxmP9U8_A"),
+      "/images/StaircaseBannister.PNG",
     ],
   },
   {
@@ -273,7 +237,7 @@ export const SERVICES = [
     galleryImages: [
       "/images/DoorInstallation1.jpg",
       "/images/DoorInstallation2.jpg",
-      driveImg("1bPq4WWirxZa48I5p8vVAtvox27AorSMc"),
+      "/images/DoorInstallation3.jpg",
     ],
   },
   {
@@ -319,7 +283,7 @@ export const SERVICES = [
     galleryImages: [
       "/images/BasementRemodel2.jpg",
       "/images/BasementRemodel3.jpg",
-      driveImg("1d1Cam005ec1NKwUqJc2bbmcvTgrG5xJ7"),
+      "/images/IMG_0901.jpg",
     ],
   },
   {
@@ -342,7 +306,7 @@ export const SERVICES = [
     galleryImages: [
       "/images/DeckBuild5.jpg",
       "/images/DeckBuild6.PNG",
-      driveImg("1aqeA0S2WZK-C4pb5RkgEz9RnsE0PVLkd"),
+      "/images/CoveredDeckBuild.jpg",
     ],
   },
 ];
