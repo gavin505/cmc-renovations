@@ -1,0 +1,300 @@
+// lib/data.ts — single source of truth for CMC Renovations content
+
+export const COMPANY = {
+  name: "CMC Renovations",
+  tagline: "Owner-Led Renovations. Built to Last.",
+  phone: "(513) 888-6448",
+  email: "info@cmcrenovationsllc.com",
+  address: "Hamilton, OH 45013",
+  hours: "Mon–Fri: 8:00 AM – 5:00 PM",
+  social: {
+    facebook: "https://facebook.com/p/CMC-Renovations-LLC-100090580519509/",
+    instagram: "https://instagram.com/cmcrenovations/",
+    youtube: "https://youtube.com/@cmcrenovations",
+    yelp: "https://yelp.com/biz/cmc-renovations-hamilton",
+    google: "https://maps.app.goo.gl/JsP2qHb66VdUTdg56",
+  },
+  owners: ["Brady", "Taylor"],
+};
+
+// Google Drive direct image URLs — using the file IDs from the client's Drive folder
+// Format: https://drive.google.com/uc?export=view&id=FILE_ID
+function driveImg(id: string) {
+  return `https://drive.google.com/uc?export=view&id=${id}`;
+}
+
+export const GALLERY_IMAGES = [
+  { src: driveImg("1iu_M4Rp5ejKrBZJOq8Vwdw8faO3XDbg1"), alt: "Bathroom Remodel", category: "bathroom" },
+  { src: driveImg("110S2wXCvHiZ-IytePjX4NCYecGEbYL_D"), alt: "Bathroom Remodel", category: "bathroom" },
+  { src: driveImg("14MKplisEsLqn_xTkufD5SDr231Gy47RH"), alt: "Bathroom Remodel", category: "bathroom" },
+  { src: driveImg("1Jk3yyZRpF2zBISh13p1PkAeGVih78Q6R"), alt: "Bathroom Remodel", category: "bathroom" },
+  { src: driveImg("1iQfQ9eBrXMDkDpz8JXB9OP6mmTrMWEFp"), alt: "Bathroom Remodel", category: "bathroom" },
+  { src: driveImg("1Hl1b1ItFkk7QkAW_dI5oPOOs5q9jdk4T"), alt: "Bathroom Remodel", category: "bathroom" },
+  { src: driveImg("1bRkczNZV7Q_RIHH7FM-mFyPdCDQUoYn8"), alt: "Bathtub Remodel", category: "bathroom" },
+  { src: driveImg("1svzJsnbdfqKXSCAbC0Nwa2a9WlFrq5T2"), alt: "Shower Remodel", category: "bathroom" },
+  { src: driveImg("118lZXrfUUCB5-i36YAUWO3nvevEvLtTa"), alt: "Shower Remodel", category: "bathroom" },
+  { src: driveImg("1lmNvYwB3tbFn5YhGc_uIXoTyXGnYS48U"), alt: "Basement Finishing", category: "basement" },
+  { src: driveImg("1bPq4WWirxZa48I5p8vVAtvox27AorSMc"), alt: "Basement Remodel", category: "basement" },
+  { src: driveImg("1d1Cam005ec1NKwUqJc2bbmcvTgrG5xJ7"), alt: "Basement Remodel", category: "basement" },
+  { src: driveImg("1fUBLF_B7g_zW1Ix0qqqz9D76uJKRDVe9"), alt: "Basement Remodel", category: "basement" },
+  { src: driveImg("1uytWscypZGz4kqG4XxDWpJlfc9Scrth6"), alt: "Basement In Progress", category: "basement" },
+  { src: driveImg("1wT20S0nBPPUPeaa_eXvRVTcCzhXQJR45"), alt: "Basement In Progress", category: "basement" },
+  { src: driveImg("1WVrSLS_Ho4zhVuGKVm4MMjsR0fvy0yJh"), alt: "Deck Build", category: "exterior" },
+  { src: driveImg("1yd6tswEFnEmb3w102fE4VfjjAeprY7Zz"), alt: "Deck Build", category: "exterior" },
+  { src: driveImg("1aqeA0S2WZK-C4pb5RkgEz9RnsE0PVLkd"), alt: "Deck Build", category: "exterior" },
+  { src: driveImg("1y1DJdvTXcD-PD_4fN4FSPGuKGKOvq1Hn"), alt: "Deck Build", category: "exterior" },
+  { src: driveImg("1XBRmmG3LctBpfKmnlfFzGEeLhEqZilQ0"), alt: "Covered Deck Build", category: "exterior" },
+  { src: driveImg("1K1Lex_lWuJK7HrXpH5KXC6QSAiEHhnjH"), alt: "Door Installation", category: "interior" },
+  { src: driveImg("1sTv6YsmUGvKzfqM6wyhI6rwN6fqdps-h"), alt: "Door Installation", category: "interior" },
+  { src: driveImg("1W1pyOrG8gUnUWousKCXo57FAEU1k3leb"), alt: "Door Installation", category: "interior" },
+  { src: driveImg("1-_JoNMWY1BBwGO_V10p8TICB1M41etp1"), alt: "Door Installation", category: "interior" },
+  { src: driveImg("1G01CbexRy5qKswPFyO_tGjfVxmP9U8_A"), alt: "Staircase Bannister", category: "interior" },
+  { src: driveImg("1T8OUyfrcmjPWDimPLaNqB7ygz5L-ZSJa"), alt: "Staircase Bannister", category: "interior" },
+  { src: driveImg("1HOZWBg47nAzwA4iU3Dt3oOS2hboeEty-"), alt: "Staircase Bannister", category: "interior" },
+  { src: driveImg("1a_IymyZb9TLFE7NOVNbAMim5imDiOBHf"), alt: "Staircase Bannister", category: "interior" },
+  { src: driveImg("1UEZEwXMdeveh-wKqPOmY4S_eEZnZ3hsz"), alt: "Kitchen Remodel", category: "kitchen" },
+  { src: driveImg("1zhdx04dzclEqoiybtHVQHfp7XsTCJp64"), alt: "Kitchen Remodel", category: "kitchen" },
+];
+
+export const SERVICES = [
+  {
+    slug: "kitchen-remodeling",
+    title: "Kitchen Remodeling",
+    shortTitle: "Kitchen",
+    icon: "🍳",
+    headline: "Complete Kitchen Transformations",
+    description:
+      "From layout redesigns to custom cabinetry and premium finishes, we handle every detail of your kitchen renovation — delivering spaces that are as functional as they are beautiful.",
+    features: [
+      "Custom cabinet design & installation",
+      "Countertop fabrication & installation",
+      "Tile backsplash & flooring",
+      "Appliance integration",
+      "Lighting design",
+      "Complete layout reconfiguration",
+    ],
+    heroImage: driveImg("1UEZEwXMdeveh-wKqPOmY4S_eEZnZ3hsz"),
+    galleryImages: [
+      driveImg("1UEZEwXMdeveh-wKqPOmY4S_eEZnZ3hsz"),
+      driveImg("1zhdx04dzclEqoiybtHVQHfp7XsTCJp64"),
+    ],
+  },
+  {
+    slug: "bathroom-remodeling",
+    title: "Bathroom Remodeling",
+    shortTitle: "Bathroom",
+    icon: "🚿",
+    headline: "Thoughtful Bathroom Renovations",
+    description:
+      "We transform outdated bathrooms into modern sanctuaries — balancing style and practicality with meticulous attention to tile work, plumbing, and finish details.",
+    features: [
+      "Shower & tub replacement",
+      "Tile design & installation",
+      "Vanity & fixture upgrades",
+      "Waterproofing systems",
+      "Lighting & ventilation",
+      "Accessibility modifications",
+    ],
+    heroImage: driveImg("1iu_M4Rp5ejKrBZJOq8Vwdw8faO3XDbg1"),
+    galleryImages: [
+      driveImg("1iu_M4Rp5ejKrBZJOq8Vwdw8faO3XDbg1"),
+      driveImg("1bRkczNZV7Q_RIHH7FM-mFyPdCDQUoYn8"),
+      driveImg("1svzJsnbdfqKXSCAbC0Nwa2a9WlFrq5T2"),
+    ],
+  },
+  {
+    slug: "basement-remodeling",
+    title: "Basement Remodeling",
+    shortTitle: "Basement",
+    icon: "🏠",
+    headline: "Unlock Your Home's Hidden Potential",
+    description:
+      "We convert underused basement space into fully finished living areas — home theaters, offices, in-law suites, and more — built to the same standards as the rest of your home.",
+    features: [
+      "Full basement finishing",
+      "Egress window installation",
+      "Framing & insulation",
+      "Electrical & plumbing rough-in",
+      "Custom bar & entertainment areas",
+      "Waterproofing & moisture control",
+    ],
+    heroImage: driveImg("1lmNvYwB3tbFn5YhGc_uIXoTyXGnYS48U"),
+    galleryImages: [
+      driveImg("1lmNvYwB3tbFn5YhGc_uIXoTyXGnYS48U"),
+      driveImg("1bPq4WWirxZa48I5p8vVAtvox27AorSMc"),
+      driveImg("1fUBLF_B7g_zW1Ix0qqqz9D76uJKRDVe9"),
+    ],
+  },
+  {
+    slug: "home-additions",
+    title: "Home Additions",
+    shortTitle: "Additions",
+    icon: "➕",
+    headline: "Expand Your Space, Enhance Your Life",
+    description:
+      "When your home no longer fits your life, we add square footage that integrates naturally with your existing structure — seamless in design, sound in construction.",
+    features: [
+      "Room additions & bump-outs",
+      "Second-story additions",
+      "Sunrooms & enclosed patios",
+      "Garage additions",
+      "In-law suites",
+      "Permit management & inspections",
+    ],
+    heroImage: driveImg("1XBRmmG3LctBpfKmnlfFzGEeLhEqZilQ0"),
+    galleryImages: [driveImg("1XBRmmG3LctBpfKmnlfFzGEeLhEqZilQ0")],
+  },
+  {
+    slug: "general-contracting",
+    title: "General Contracting",
+    shortTitle: "General",
+    icon: "🔨",
+    headline: "One Point of Contact. Every Trade Coordinated.",
+    description:
+      "As a licensed general contractor, we manage the full scope of your renovation — coordinating every subcontractor, schedule, and detail so you don't have to.",
+    features: [
+      "Full project management",
+      "Subcontractor coordination",
+      "Permit acquisition",
+      "Budget & timeline management",
+      "Quality control inspections",
+      "Punch list completion",
+    ],
+    heroImage: driveImg("1WVrSLS_Ho4zhVuGKVm4MMjsR0fvy0yJh"),
+    galleryImages: [driveImg("1WVrSLS_Ho4zhVuGKVm4MMjsR0fvy0yJh")],
+  },
+  {
+    slug: "flooring-installation",
+    title: "Flooring Installation",
+    shortTitle: "Flooring",
+    icon: "🪵",
+    headline: "Flooring That Sets the Foundation",
+    description:
+      "From hardwood to luxury vinyl plank, we install flooring with precision — properly prepped, perfectly leveled, and finished to last for decades.",
+    features: [
+      "Hardwood installation & refinishing",
+      "Luxury vinyl plank (LVP)",
+      "Tile & stone flooring",
+      "Subfloor repair & leveling",
+      "Transitions & trim work",
+      "Heated floor systems",
+    ],
+    heroImage: driveImg("1G01CbexRy5qKswPFyO_tGjfVxmP9U8_A"),
+    galleryImages: [driveImg("1G01CbexRy5qKswPFyO_tGjfVxmP9U8_A")],
+  },
+  {
+    slug: "interior-painting",
+    title: "Interior Painting",
+    shortTitle: "Painting",
+    icon: "🎨",
+    headline: "Flawless Finishes, Every Surface",
+    description:
+      "Clean lines, crisp edges, and professional prep work — our interior painting elevates every room with the kind of finish that only comes from careful, experienced hands.",
+    features: [
+      "Full interior painting",
+      "Cabinet painting & refinishing",
+      "Accent walls & feature ceilings",
+      "Drywall repair & prep",
+      "Trim, door & baseboard painting",
+      "Color consultation",
+    ],
+    heroImage: driveImg("1bPq4WWirxZa48I5p8vVAtvox27AorSMc"),
+    galleryImages: [driveImg("1bPq4WWirxZa48I5p8vVAtvox27AorSMc")],
+  },
+  {
+    slug: "custom-cabinetry-built-ins",
+    title: "Custom Cabinetry & Built-Ins",
+    shortTitle: "Cabinetry",
+    icon: "🗄️",
+    headline: "Built for Your Space. Built to Stay.",
+    description:
+      "Custom cabinetry and built-in shelving that fits your exact dimensions, style, and storage needs — crafted with joinery that stands up to daily use for years to come.",
+    features: [
+      "Custom kitchen cabinetry",
+      "Built-in bookshelves & entertainment centers",
+      "Mudroom & laundry built-ins",
+      "Custom closet systems",
+      "Cabinet hardware & soft-close upgrades",
+      "Painted & stained finishes",
+    ],
+    heroImage: driveImg("1UEZEwXMdeveh-wKqPOmY4S_eEZnZ3hsz"),
+    galleryImages: [driveImg("1UEZEwXMdeveh-wKqPOmY4S_eEZnZ3hsz")],
+  },
+  {
+    slug: "home-office-remodeling",
+    title: "Home Office Remodeling",
+    shortTitle: "Home Office",
+    icon: "💼",
+    headline: "A Workspace Worth Working In",
+    description:
+      "We design and build home offices that are productive, organized, and genuinely comfortable — with built-in storage, proper lighting, and layouts that support how you actually work.",
+    features: [
+      "Custom desk & shelving systems",
+      "Dedicated electrical circuits",
+      "Lighting design for productivity",
+      "Soundproofing solutions",
+      "Built-in storage & file organization",
+      "Cable management",
+    ],
+    heroImage: driveImg("1d1Cam005ec1NKwUqJc2bbmcvTgrG5xJ7"),
+    galleryImages: [driveImg("1d1Cam005ec1NKwUqJc2bbmcvTgrG5xJ7")],
+  },
+  {
+    slug: "garage-conversions-remodels",
+    title: "Garage Conversions & Remodels",
+    shortTitle: "Garage",
+    icon: "🏗️",
+    headline: "More Than a Parking Spot",
+    description:
+      "Transform your garage into a functional living space, workshop, or studio — or upgrade it to protect your vehicles and enhance your home's utility.",
+    features: [
+      "Full garage-to-living conversions",
+      "Workshop & hobby space builds",
+      "Epoxy flooring & organization systems",
+      "Insulation & climate control",
+      "Electrical upgrades",
+      "Garage door & entry improvements",
+    ],
+    heroImage: driveImg("1aqeA0S2WZK-C4pb5RkgEz9RnsE0PVLkd"),
+    galleryImages: [driveImg("1aqeA0S2WZK-C4pb5RkgEz9RnsE0PVLkd")],
+  },
+];
+
+export const LOCATIONS = [
+  { slug: "hamilton", name: "Hamilton", county: "Butler County", state: "OH", primary: true },
+  { slug: "fairfield", name: "Fairfield", county: "Butler County", state: "OH" },
+  { slug: "fairfield-township", name: "Fairfield Township", county: "Butler County", state: "OH" },
+  { slug: "west-chester-township", name: "West Chester Township", county: "Butler County", state: "OH" },
+  { slug: "liberty-township", name: "Liberty Township", county: "Butler County", state: "OH" },
+  { slug: "monroe", name: "Monroe", county: "Butler County", state: "OH" },
+  { slug: "hanover-township", name: "Hanover Township", county: "Butler County", state: "OH" },
+  { slug: "madison-township", name: "Madison Township", county: "Butler County", state: "OH" },
+  { slug: "milford-township", name: "Milford Township", county: "Butler County", state: "OH" },
+  { slug: "oxford", name: "Oxford", county: "Butler County", state: "OH" },
+  { slug: "reily-township", name: "Reily Township", county: "Butler County", state: "OH" },
+  { slug: "sharonville", name: "Sharonville", county: "Hamilton County", state: "OH" },
+  { slug: "trenton", name: "Trenton", county: "Butler County", state: "OH" },
+];
+
+export const REVIEWS = [
+  {
+    author: "Mars D.",
+    rating: 5,
+    text: "This was the first time we hired CMC Renovations LLC but Brady and Taylor did not disappoint. Brady listened to our needs and concerns regarding the project and accommodated our inputs. They were very professional and came on time every day ready to work. During our bathroom reconstruction, they showed professionalism, flexibility, and a genuine commitment to meet customer expectations. We highly recommend CMC Renovations LLC.",
+  },
+  {
+    author: "Krash B.",
+    rating: 5,
+    text: "Brady and Taylor remodeled my bathroom and did a great job. They were both professional and personable. They worked nearly non-stop and turned an old rundown room into a modern, clean, waterproof space. Brady is also very responsive and helpful for additional questions or concerns even after the job is completed.",
+  },
+  {
+    author: "Chelsea R.",
+    rating: 5,
+    text: "CMC redid hand railings inside our home to match our new flooring. It was a great experience — clear communication and attention to detail throughout the whole project.",
+  },
+  {
+    author: "Kelsie",
+    rating: 5,
+    text: "Great experience! Very prompt and professional company. Will be using again.",
+  },
+];
