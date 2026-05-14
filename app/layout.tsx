@@ -11,6 +11,10 @@ export const metadata: Metadata = {
   description:
     "Expert residential remodeling in Hamilton, OH and surrounding areas. Kitchen, bathroom, basement remodeling and more. Owner-operated with 15+ years of combined experience. Free estimates.",
   keywords: ["remodeling", "renovation", "Hamilton OH", "bathroom remodel", "kitchen remodel", "basement finishing"],
+  icons: {
+    icon: "/LOGO.png",
+    apple: "/LOGO.png",
+  },
   openGraph: {
     siteName: "CMC Renovations",
     type: "website",
