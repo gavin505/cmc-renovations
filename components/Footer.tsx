@@ -39,15 +39,11 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div className="mb-5">
-            <span
-              className="text-3xl font-bold"
-              style={{ fontFamily: "var(--font-playfair)", color: "var(--teal-light)" }}
-            >
-              CMC
-            </span>
-            <span className="block text-xs tracking-[0.2em] uppercase text-gray-400 mt-0.5">
-              Renovations
-            </span>
+            <img
+              src="/LOGO.png"
+              alt="CMC Renovations"
+              className="h-14 w-auto"
+            />
           </div>
           <p className="text-gray-400 text-sm leading-relaxed mb-6">
             Owner-operated residential remodeling serving Hamilton and Butler County. LLC est. 2023 with 15+ years of combined experience. Brady and Taylor on every job.

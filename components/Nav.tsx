@@ -26,20 +26,11 @@ export default function Nav() {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="flex flex-col leading-none">
-            <span
-              className="text-2xl font-bold tracking-tight"
-              style={{ fontFamily: "var(--font-playfair)", color: "var(--teal)" }}
-            >
-              CMC
-            </span>
-            <span
-              className="text-xs tracking-[0.2em] uppercase font-medium text-[#1a1a1a]"
-              style={{ fontFamily: "var(--font-dm-sans)" }}
-            >
-              Renovations
-            </span>
-          </div>
+          <img
+            src="/LOGO.png"
+            alt="CMC Renovations"
+            className="h-12 w-auto"
+          />
         </Link>
 
         {/* Desktop nav */}
@@ -88,6 +79,12 @@ export default function Nav() {
             className="text-sm font-medium text-charcoal hover:text-teal-600 transition-colors"
           >
             Gallery
+          </Link>
+          <Link
+            href="/locations"
+            className="text-sm font-medium text-charcoal hover:text-teal-600 transition-colors"
+          >
+            Locations
           </Link>
           <Link
             href="/about"
@@ -140,6 +137,7 @@ export default function Nav() {
           {[
             { href: "/", label: "Home" },
             { href: "/gallery", label: "Gallery" },
+            { href: "/locations", label: "Locations" },
             { href: "/about", label: "About" },
             { href: "/blog", label: "Blog" },
             { href: "/contact", label: "Contact" },
