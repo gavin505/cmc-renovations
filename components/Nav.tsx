@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { SERVICES, COMPANY } from "@/lib/data";
-import { Menu, X, ChevronDown, Phone } from "lucide-react";
+import { Menu, X, ChevronDown, Phone, MessageSquare } from "lucide-react";
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -114,7 +114,15 @@ export default function Nav() {
             style={{ background: "var(--teal)" }}
           >
             <Phone size={14} />
-            {COMPANY.phone}
+            Call
+          </a>
+          <a
+            href={`sms:${COMPANY.phone}`}
+            className="hidden md:flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold text-white transition-all hover:shadow-lg hover:shadow-teal-200 hover:-translate-y-0.5"
+            style={{ background: "var(--teal)" }}
+          >
+            <MessageSquare size={14} />
+            Text
           </a>
 
           <button
@@ -168,14 +176,24 @@ export default function Nav() {
             </div>
           </div>
 
-          <div className="pt-4">
+          <div className="pt-4 flex gap-3">
             <a
               href={`tel:${COMPANY.phone}`}
-              className="block text-center px-6 py-3.5 rounded-2xl text-white font-semibold"
+              className="flex-1 flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl text-white font-semibold"
               style={{ background: "var(--teal)" }}
               onClick={() => setMenuOpen(false)}
             >
-              Call {COMPANY.phone}
+              <Phone size={16} />
+              Call
+            </a>
+            <a
+              href={`sms:${COMPANY.phone}`}
+              className="flex-1 flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl text-white font-semibold"
+              style={{ background: "var(--teal)" }}
+              onClick={() => setMenuOpen(false)}
+            >
+              <MessageSquare size={16} />
+              Text
             </a>
           </div>
         </nav>
