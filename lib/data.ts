@@ -6,7 +6,7 @@ export const COMPANY = {
   phone: "(513) 888-6448",
   email: "info@cmcrenovationsllc.com",
   address: "Hamilton, OH 45013",
-  hours: "Mon–Fri: 8:00 AM – 5:00 PM",
+  hours: "M–F: 8:00 AM – 7:00 PM | Sat–Sun: Closed",
   social: {
     facebook: "https://facebook.com/p/CMC-Renovations-LLC-100090580519509/",
     yelp: "https://yelp.com/biz/cmc-renovations-hamilton",
